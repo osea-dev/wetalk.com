@@ -1,0 +1,34 @@
+{
+    "name": "wetalk",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Jicoy <oseadevteam@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "lerna": "lerna",
+        "dev:start": "lerna run dev --parallel",
+        "dev": "cross-env API_BASE_URL=http://localhost:5001 lerna run dev --parallel",
+        "start": "cross-env API_BASE_URL=http://localhost:5001 lerna run start --parallel",
+        "build": "cross-env lerna run build --parallel"
+    },
+    "workspaces": {
+        "packages": [
+            "local-project/*",
+            "packages/*"
+        ]
+    },
+    "devDependencies": {
+        "eslint-plugin-base": "^1.0.0",
+        "cross-env": "^7.0.3",
+        "lerna": "^6.0.1"
+    },
+    "volta": {
+        "node": "16.10.0",
+        "yarn": "1.22.19"
+    },
+    "dependencies": {
+        "npm": "^8.19.4",
+        "pm2": "^5.3.1"
+    }
+}
