@@ -46,7 +46,7 @@ module.exports = {
                 node: true,
             },
             extends: ["eslint:recommended", "plugin:prettier/recommended"],
-            plugins: ["@stone/base"],
+            plugins: ["base"],
             rules: publicRules,
         },
         "babel-js": {
@@ -63,7 +63,7 @@ module.exports = {
                 node: true,
             },
             extends: ["eslint:recommended", "plugin:prettier/recommended"],
-            plugins: ["@stone/base"],
+            plugins: ["base"],
             rules: publicRules,
         },
         ts: {
@@ -80,7 +80,7 @@ module.exports = {
                 node: true,
             },
             extends: ["eslint:recommended", "plugin:prettier/recommended"],
-            plugins: ["@stone/base"],
+            plugins: ["base"],
             rules: publicRules,
             overrides: [
                 {
@@ -126,7 +126,7 @@ module.exports = {
                 node: true,
             },
             extends: ["eslint:recommended", "plugin:prettier/recommended"],
-            plugins: ["@stone/base"],
+            plugins: ["base"],
             rules: publicRules,
             overrides: [
                 {

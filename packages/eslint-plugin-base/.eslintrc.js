@@ -5,5 +5,5 @@
  */
 
 module.exports = {
-    extends: ["plugin:@stone/base/js"],
+    extends: ["plugin:base/js"],
 };

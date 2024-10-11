@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-    extends: ["plugin:@stone/base/ts"],
+    extends: ["plugin:base/ts"],
     parserOptions: {
         requireConfigFile: false,
     },
