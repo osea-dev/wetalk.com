@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-base",
-    "version": "1.1.6",
+    "version": "1.0.0",
     "description": "> TODO: description",
     "author": "Jicoy <oseadevteam@gmail.com>",
     "homepage": "",
@@ -13,9 +13,6 @@
     "files": [
         "lib"
     ],
-    "publishConfig": {
-        "registry": "https://registry.yarnpkg.com"
-    },
     "scripts": {
         "test": "echo \"Error: run tests from root\" && exit 1"
     },
