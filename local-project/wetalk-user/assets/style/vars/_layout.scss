@@ -1,0 +1,26 @@
+/*
+ * @Description: 结构样式变量
+ * @Author: F-Stone
+ * @LastEditTime: 2022-06-19 18:50:36
+ */
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1760px,
+);
+
+$divide-line: 1px solid #e1e5f1;
+
+$panel-radius: var(--r-normal);
+
+$panel-padding: #{calc(var(--p-normal) * 3.4) calc(var(--p-normal) * 6)};
+$panel-padding-2: #{calc(var(--p-normal) * 3.4) calc(var(--p-normal) * 4)};
+$panel-padding-3: #{calc(var(--p-normal) * 3.4) calc(var(--p-normal) * 4)
+    calc(var(--p-normal) * 4)};
+$dialog-panel-padding: #{calc(var(--p-normal) * 5) calc(var(--p-normal) * 6)};
+
+// padding: 34px 40px;

@@ -1,0 +1,501 @@
+/* stylelint-disable selector-class-pattern */
+:root {
+    /* ---------------------------------- */
+    /*             color-group            */
+    /* ---------------------------------- */
+    --t-c-deep: #000;
+    --t-c-lighter: #{$t-c-lighter};
+    --t-c-default: #{$t-c-default};
+    --t-c-subtitle: #{$black-7};
+
+    --l-c-divide: #e1e5f1;
+
+    --theme-c: #{$green-4};
+
+    --b-c-deep: #000;
+
+    --module-title-size: 40px;
+    --module-subtitle-size: 50px;
+
+    --screen-h: 1vh;
+    /* stylelint-disable-next-line declaration-block-no-duplicate-custom-properties */
+    // --screen-h: 1dvh;
+
+    // SECTION layout 变量
+
+    --r-normal: 12px;
+
+    // !SECTION layout 变量
+
+    // SECTION size 变量
+
+    --nav-h: #{$nav-h-default};
+    --footer-h: 46px;
+
+    --p-normal: 10px;
+    --x-space-normal: 32px;
+    --y-space-normal: 32px;
+    --panel-space-between: 15px;
+
+    --f-s-level-1: 26px;
+
+    // !SECTION
+    @include media-breakpoint-down(xxxl) {
+        --module-title-size: 36px;
+        --module-subtitle-size: 42px;
+    }
+    @include media-breakpoint-down(xxl) {
+        --nav-h: #{$nav-h-mini};
+        --module-title-size: 32px;
+        --module-subtitle-size: 40px;
+    }
+    @include media-breakpoint-down(sm) {
+        // SECTION layout 变量
+
+        --r-normal: 6px;
+
+        // !SECTION layout 变量
+
+        // SECTION size 变量
+
+        --nav-h: 60px;
+
+        --p-normal: 6px;
+        --x-space-normal: 20px;
+        --y-space-normal: 20px;
+        --panel-space-between: 10px;
+
+        --f-s-level-1: 22px;
+
+        // !SECTION
+    }
+}
+@supports (height: 1dvh) {
+    body {
+        padding-top: 1000px;
+    }
+    :root {
+        --screen-h: 1dvh;
+    }
+}
+.pc-ui {
+    --screen-h: 1vh;
+}
+/* ---------------------------------- */
+/*                站点设置                */
+/* ---------------------------------- */
+body {
+    overflow: auto;
+
+    padding: 0;
+
+    // min-width: 1180px;
+
+    color: var(--t-c-default);
+    &[data-nav-size="mini"] {
+        --nav-h: #{$nav-h-shirk};
+    }
+}
+button {
+    outline: none !important;
+}
+button:focus-visible {
+    outline: none;
+}
+
+/* ---------------------------------- */
+/*                页面设置                */
+/* ---------------------------------- */
+.w-page {
+    background-color: #fff;
+}
+.w-body {
+    // min-height: calc(100vh - var(--footer-h));
+}
+.vue-notification-group {
+    position: fixed;
+    z-index: $zindex-tooltip;
+
+    display: flex;
+
+    width: 100%;
+    height: 0;
+
+    justify-content: center;
+}
+.vue-notification-wrapper {
+    overflow: visible;
+
+    width: auto;
+}
+
+/* ---------------------------------- */
+/*            wow animation           */
+/* ---------------------------------- */
+@for $i from 1 through 5 {
+    .animation-delay-#{$i} {
+        animation-delay: 0.1s * $i;
+    }
+}
+// #region wow animation 所需属性
+.wow {
+    visibility: hidden;
+
+    animation-duration: 0.66s;
+
+    animation-fill-mode: forwards;
+}
+.wow-long-dur {
+    animation-duration: 1s;
+}
+.wow-group {
+    @for $i from 1 through 4 {
+        .wow:nth-child(4n + #{$i}) {
+            animation-delay: 0.1s * $i;
+        }
+    }
+}
+.wow-group-2 {
+    @for $i from 1 through 2 {
+        .wow:nth-child(2n + #{$i}) {
+            animation-delay: 0.1s * $i;
+        }
+    }
+}
+.wow-group-3 {
+    @for $i from 1 through 3 {
+        .wow:nth-child(3n + #{$i}) {
+            animation-delay: 0.1s * $i;
+        }
+    }
+}
+.wow-group-4 {
+    @for $i from 1 through 4 {
+        .wow:nth-child(4n + #{$i}) {
+            animation-delay: 0.1s * $i;
+        }
+    }
+}
+.wow-group-5 {
+    @for $i from 1 through 5 {
+        .wow:nth-child(5n + #{$i}) {
+            animation-delay: 0.1s * $i;
+        }
+    }
+}
+.wow-group-6 {
+    @for $i from 1 through 6 {
+        .wow:nth-child(6n + #{$i}) {
+            animation-delay: 0.1s * $i;
+        }
+    }
+}
+@include media-breakpoint-down(xl) {
+    .xl\:wow-group-5 {
+        @for $i from 1 through 5 {
+            .wow:nth-child(5n + #{$i}) {
+                animation-delay: 0.1s * $i;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(lg) {
+    .lg\:wow-group-4 {
+        @for $i from 1 through 4 {
+            .wow:nth-child(4n + #{$i}) {
+                animation-delay: 0.1s * $i;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .md\:wow-group-3 {
+        @for $i from 1 through 3 {
+            .wow:nth-child(3n + #{$i}) {
+                animation-delay: 0.1s * $i;
+            }
+        }
+    }
+}
+// fadeInUp
+@keyframes fadeInUp50 {
+    from {
+        transform: translate3d(0, 50px, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInUp-50 {
+    animation-name: fadeInUp50;
+
+    opacity: 0;
+}
+@keyframes fadeInUp100 {
+    from {
+        transform: translate3d(0, 100px, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInUp-100 {
+    animation-name: fadeInUp100;
+
+    opacity: 0;
+}
+@keyframes fadeInUp30Percent {
+    from {
+        transform: translate3d(0, 30%, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInUp-30_percent {
+    animation-name: fadeInUp50Percent;
+
+    opacity: 0;
+}
+@keyframes fadeInUp50Percent {
+    from {
+        transform: translate3d(0, 50%, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInUp-50_percent {
+    animation-name: fadeInUp50Percent;
+
+    opacity: 0;
+}
+
+// fadeInLeft
+@keyframes fadeInLeft30 {
+    from {
+        transform: translate3d(-30px, 0, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInLeft-30 {
+    animation-name: fadeInLeft30;
+
+    opacity: 0;
+}
+@keyframes fadeInLeft50 {
+    from {
+        transform: translate3d(-50px, 0, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInLeft-50 {
+    animation-name: fadeInLeft50;
+
+    opacity: 0;
+}
+@keyframes fadeInLeft30Percent {
+    from {
+        transform: translate3d(-30%, 0, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInLeft-30_percent {
+    animation-name: fadeInLeft;
+
+    opacity: 0;
+}
+@keyframes fadeInLeft50Percent {
+    from {
+        transform: translate3d(-50%, 0, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInLeft-50_percent {
+    animation-name: fadeInLeft;
+
+    opacity: 0;
+}
+
+// fadeInRight
+@keyframes fadeInRight30 {
+    from {
+        transform: translate3d(30px, 0, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInRight-30 {
+    animation-name: fadeInRight30;
+
+    opacity: 0;
+}
+@keyframes fadeInRight50 {
+    from {
+        transform: translate3d(50px, 0, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInRight-50 {
+    animation-name: fadeInRight50;
+
+    opacity: 0;
+}
+@keyframes fadeInRight10Percent {
+    from {
+        transform: translate3d(10%, 0, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInRight-10_percent {
+    animation-name: fadeInRight10Percent;
+
+    opacity: 0;
+}
+@keyframes fadeInRight30Percent {
+    from {
+        transform: translate3d(30%, 0, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInRight-30_percent {
+    animation-name: fadeInRight30Percent;
+
+    opacity: 0;
+}
+@keyframes fadeInRight50Percent {
+    from {
+        transform: translate3d(50%, 0, 0);
+
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+
+        opacity: 1;
+    }
+}
+.animate__fadeInRight-50_percent {
+    animation-name: fadeInRight;
+
+    opacity: 0;
+}
+
+// fadeIn
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.animate__fadeIn {
+    animation-name: fadeIn;
+
+    opacity: 0;
+}
+
+// #endregion
+.tippy-box[data-inertia][data-state="visible"] {
+    transition-timing-function: cubic-bezier(0.54, 1.5, 0.38, 1.11);
+}
+.wrapper--limit-width {
+    @include wrapper--limit-width;
+
+    margin: 0 auto;
+}
+.wrapper--limit-width-mini {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.hide {
+    @include hide;
+}
+.zhiCustomBtn {
+    position: fixed;
+    z-index: $zindex-fixed - 10;
+    right: 2%;
+    bottom: 3vh;
+
+    width: 70px;
+    height: 70px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgb(255 87 87 / 0.2);
+    @include media-breakpoint-down(sm) {
+        width: 42px;
+        height: 42px;
+    }
+}
+body[data-no-zc="1"] {
+    .zhiCustomBtn {
+        display: none !important;
+    }
+}

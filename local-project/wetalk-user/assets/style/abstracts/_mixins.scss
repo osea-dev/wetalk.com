@@ -1,0 +1,23 @@
+//
+@mixin dialog-head {
+    font-size: var(--f-s-level-1);
+    font-weight: 700;
+    line-height: em(39px, 26px);
+
+    text-align: center;
+
+    color: #23262f;
+}
+@mixin panel-head {
+    font-size: var(--f-s-level-1);
+    font-weight: 700;
+    line-height: em(39px, 26px);
+
+    color: #23262f;
+}
+@function c-space($m) {
+    @return calc(var(--p-normal) * $m);
+}
+@function w-h($percent) {
+    @return calc(var(--screen-h) * $percent);
+}

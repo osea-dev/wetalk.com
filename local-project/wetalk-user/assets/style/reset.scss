@@ -1,0 +1,68 @@
+:root {
+    --t-c-default: #{$t-c-default};
+    --t-s-default: #{$t-s-default};
+    --t-lh-root: #{$t-lh-default};
+    --main-bg-color: #fff;
+
+    /* #region 字体管理 */
+
+    // 内容宽度
+    --content-width: calc(#{$content-w} + #{$content-space * 2});
+}
+
+/* ---------------------------------- */
+/*          custom reset css          */
+/* ---------------------------------- */
+html {
+    font-family: var(--SourceHanSans);
+    font-size: var(--t-s-default);
+    font-weight: 500;
+    line-height: var(--t-lh-root);
+
+    height: 100%;
+}
+body {
+    overflow-x: hidden;
+
+    height: 100%;
+
+    user-select: none;
+
+    color: var(--t-c-default);
+    background-color: var(--main-bg-color);
+}
+i {
+    font-style: normal;
+}
+a {
+    display: inline-block;
+
+    vertical-align: middle;
+    &:hover {
+        color: var(--t-c-deeper);
+    }
+}
+img {
+    vertical-align: top;
+}
+nav {
+    display: block;
+}
+input::placeholder {
+    color: var(--t-c-default) !important;
+}
+input:input-placeholder {
+    color: var(--t-c-default) !important;
+}
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #fff inset !important;
+}
+button {
+    vertical-align: middle;
+
+    border-width: 0;
+    outline: none !important;
+}
+textarea {
+    appearance: none;
+}
