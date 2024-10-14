@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# 修复控制台输出被附加而不是被替换的问题
+exec >/dev/tty 2>&1
+
+yarn lint-staged
