@@ -1,0 +1,423 @@
+{
+    "KEY_BASE": {
+        "ALL": "More",
+        "ALL_TEXT": "All",
+        "AND": "and",
+        "APPRAISE_STATUS": {
+            "0": "Rating",
+            "1": "Rating",
+            "2": "Rated",
+            "3": "Rated"
+        },
+        "BACK_HOME": "Return to Personal Center",
+        "BACK_WETALK_PAGE": "Wetalk",
+        "BIRTHDAY": "Date of birth",
+        "BIRTHPLACE": "Place of birth",
+        "BOOKING": "Reserve",
+        "BOY": "Male",
+        "BTN": {
+            "CANCEL": "Cancel"
+        },
+        "CANCEL": "Cancel",
+        "CHANGE": "Update",
+        "CHINESE": "Chinese",
+        "CONFIRM": "CONFIRM",
+        "CONTACT_US": "Customer Service",
+        "COPYRIGHT": "Copyright © WeTalk International Education Pte. Ltd. {0} Support by Uelike.",
+        "COURSER_REPORT": "Report",
+        "COURSE_NUM": "Class",
+        "COURSE_REPLAY": "lesson playback",
+        "COURSE_REPORT_DETAIL": "Lesson Report",
+        "COURSE_STATUS": {
+            "0": "Expired",
+            "1": "Finished",
+            "2": "Active",
+            "3": "Pending",
+            "4": "Cancelled",
+            "5": "Pending",
+            "6": "Finished"
+        },
+        "COURSE_TEACHER": "Teacher: {0}",
+        "COURSE_TIP": {
+            "0": "Remaining class",
+            "1": "Total class",
+            "2": "total"
+        },
+        "COURSE_TITLE": "Section Name",
+        "COURSE_TYPE": {
+            "0": "Formal Class",
+            "1": "Trial Lesson",
+            "2": "locked",
+            "3": "Recording course",
+            "4": "Online course",
+            "5": "Offline course"
+        },
+        "CULTURE": "Educational background ",
+        "CURRENT_LEVEL": "",
+        "DETAIL": "Details",
+        "EDITOR": "Edit",
+        "EMAIL": "Email",
+        "EMAIL2": "E-mail",
+        "EMAIL_LOGIN": "Email",
+        "EMAIL_PLACEHOLDER": "Please enter your email address",
+        "EMPTY": "Empty",
+        "EMPTY2": "Empty",
+        "EMPTY3": "Empty",
+        "EMPTY_VALUE": "unfilled",
+        "EN": "English",
+        "ENTER": "Enter",
+        "ENTER_CLASSROOM": "Enter",
+        "ENTER_CLASSROOM_TIP": "<p>You can enter the classroom {0} minutes before the class starts</p>",
+        "EXIT": "Exit",
+        "FAMILY_INFO": "Guardian Information",
+        "FIRST_NAME": "Given name",
+        "GENDER": "Gender",
+        "GENERAL_SETTING": "General Settings",
+        "HI": "Hi! {0}",
+        "HOMEWORK": "Homework",
+        "LAST_NAME": "Family name",
+        "LESSON_LIST": "Lessons",
+        "LESSON_METHOD": "Form",
+        "LESSON_PROGRESS": "Progress",
+        "LESSON_STATE": {
+            "0": "Learning",
+            "1": "Not started"
+        },
+        "LOCAL": "Place of residence",
+        "LOCAL_UTC": "Residence/Time Zone",
+        "LOGIN": "Log in",
+        "MESSAGE": "Message",
+        "MOBILE_LOGIN": "Phone Number",
+        "MY_COURSE": "My Courses",
+        "NAME": "Name",
+        "NEW_PAGE": " new tab",
+        "NEW_PW": "New password",
+        "NO": "no",
+        "OPER": "Operate",
+        "ORDER": "Order",
+        "PASSWORD": "Password",
+        "PHONE_NUMBER": "Phone Number",
+        "PHONE_NUMBER2": "Phone number",
+        "PRICE": "Price",
+        "PRIVACY_AGREEMENT": "privacy agreement.",
+        "REFRESH": "Refresh",
+        "REGISTER": "Register",
+        "REPORT_TIP": "<p>The grading data will be updated within 24 hours after the trial class and the final test</p>",
+        "SETTING": "Setting",
+        "STAR": {
+            "0": "Not rated",
+            "1": "D",
+            "2": "C",
+            "3": "B",
+            "4": "A"
+        },
+        "STAR2": {
+            "0": "E",
+            "1": "D",
+            "2": "C",
+            "3": "B",
+            "4": "A"
+        },
+        "SUBMIT": "Submit",
+        "SUBMIT_SUC": "Successfully",
+        "TERMS_OF_SERVICE": "terms of service",
+        "TIP": "Tip",
+        "TIP_MSG": {
+            "0": "please enter your name",
+            "1": "Image size should not exceed {0} M",
+            "2": "Please enter verification code",
+            "3": "Send Code",
+            "4": "({0}s)",
+            "5": "Please check whether the mobile number is correct",
+            "6": "Please enter phone number",
+            "7": "<p>Your exclusive customer service will contact you within 1 hour. \n</p> <p>Please pay attention to check your email and keep your phone open so that we can arrange the course time for you. \n</p>",
+            "8": "Book a class",
+            "9": "Save success",
+            "10": "Please select mode of payment",
+            "11": "not found",
+            "12": "Please enter a temporary password",
+            "13": "Please enter password",
+            "14": "Please enter the class performance of the students in this class"
+        },
+        "TOTAL": "Total",
+        "TOTAL_COURSE": "Total {0} lessons",
+        "UPLOAD": "Upload",
+        "UTC": "Time zone",
+        "YES": "yes",
+        "girl": "Female"
+    },
+    "KEY_BOOKING_PANEL": {
+        "AGE": "age",
+        "BOOKING": "Try Now",
+        "CANTACT": "Phone Number",
+        "COURSE_NAME": "Course",
+        "GENDER": "Gender",
+        "LEVEL_DESC": "Language ability assessment report",
+        "LEVEL_REPORT": "Grading report",
+        "SUBTITLE": "We will tailor the course to best suit your needs!",
+        "TIP": {
+            "1": "Waiting",
+            "2": "Generating report",
+            "3": "More",
+            "4": "Your commonly used email address",
+            "5": "Student's date of birth",
+            "6": "Is there a target language basis for learning",
+            "7": "Please add your age"
+        },
+        "TITLE": "Free appointment",
+        "TITLE_DETAIL": "Book a free trial lesson"
+    },
+    "KEY_CALENDAR": {
+        "DAY": {
+            "0": "Sun.",
+            "1": "Mon.",
+            "2": "Tues.",
+            "3": "Wed.",
+            "4": "Thurs.",
+            "5": "Fri.",
+            "6": "Sat."
+        },
+        "LIST": "List",
+        "MONTH": "",
+        "TITLE": "Calendar",
+        "TODAY": "Today",
+        "WEEK": "{0}",
+        "YEAR": "."
+    },
+    "KEY_CANCEL_COURSE": {
+        "TIP": {
+            "0": "Confirm",
+            "1": "think again",
+            "2": "Please keep in touch. Within 1 hour, the customer service will contact you to confirm the cancellation and send an email reminder.",
+            "3": "OK",
+            "4": "Please enter the reason for requesting course cancellation"
+        },
+        "TITLE": "Application for Cancellation of Course"
+    },
+    "KEY_CANCEL_PANEL": {
+        "SUBTITLE": "For better service, tell us the reason for your cancellation",
+        "TIP": {
+            "0": "Other reasons",
+            "1": "Think again",
+            "2": "Please enter the reason for canceling the order"
+        },
+        "TITLE": "Select reason for cancellation"
+    },
+    "KEY_FINISH_LESSON_PANEL": {
+        "TITLE": "Completed Courses"
+    },
+    "KEY_FORGOT_PANEL": {
+        "CONFIRM_SUBTITLE": "We have just sent a password reset email to your email address ({0}). \nClick the link in the email to reset your password.",
+        "CONFIRM_TITLE": "Please check email",
+        "SUBTITLE": "Please enter your email address below so we can send you a link to reset your password.",
+        "TIP": {
+            "MESSAGE": [
+                "Please check your email in the Spam or Spam folder.",
+                "Resend email"
+            ],
+            "TITLE": "Didn't get the email?"
+        },
+        "TITLE": "Reset the Password"
+    },
+    "KEY_GUARDIAN_PANEL": {
+        "FORM": {
+            "0": "Please fill in the name of the guardian",
+            "1": "Name",
+            "2": "Contact Information of guardian",
+            "3": "Relationship of guardian",
+            "4": "Relationship of guardian",
+            "5": "Phone number"
+        },
+        "TIP": {
+            "0": "Please enter your guardian name",
+            "1": "Please fill in the relationship with the guardian"
+        }
+    },
+    "KEY_HOMEWORK_PANEL": {
+        "NAME": "Homework - {0}",
+        "TIP": {
+            "0": "Homework guidelines"
+        },
+        "TITLE": "My Homework"
+    },
+    "KEY_LOGIN_PANEL": {
+        "REGISTER": "Creating an Account",
+        "SUBTITLE": "Once you log in or create an account, it means that you have read and agreed to WeTalk ",
+        "TIP": {
+            "0": "Please fill in the password",
+            "1": "forget your password?",
+            "2": "",
+            "3": "Stay logged in"
+        },
+        "TITLE": "Student Login"
+    },
+    "KEY_META_TITLE": "WeTalk - WeTalk International Education Pte. Ltd.",
+    "KEY_NAV": {
+        "CENTER": "Personal Center",
+        "COURSE": "Course",
+        "MY_MSG": "Message",
+        "MY_ORDER": "Order",
+        "MY_SETTING": "Setting",
+        "REPORT": "Report",
+        "SCHEDULE": "Schedule"
+    },
+    "KEY_OPEN_DETAIL": "View Details",
+    "KEY_ORDER": {
+        "CANCEL": "Cancel",
+        "CANCEL_SUC": "Cancel success",
+        "CONFIRM": "Confirm Order",
+        "CONFRIM_PAY": "Pay",
+        "COURSE_NAME": "Course",
+        "DETAIL": "Details",
+        "DETAIL_TITLE": "Order Details",
+        "EMPTY": "Empty",
+        "LIST": "Order List",
+        "METHOD": "Mode of payment",
+        "OPEN_DETAIL": "View order Details",
+        "ORDER_ID": "Order ID: {0}",
+        "ORDER_INFO": "Payment information",
+        "ORIGIN_PRICE": "{0}",
+        "PAY": "Pay",
+        "PAY_MONEY": "Total",
+        "PAY_TITLE": "Order",
+        "REPAY": "Pay",
+        "STATUS": {
+            "0": "Paying",
+            "1": "Failed",
+            "2": "Success",
+            "3": "Status",
+            "4": "Completed",
+            "5": "Pending",
+            "6": "order deleted"
+        },
+        "TIME": "Payment time",
+        "TIP": {
+            "0": "Please pay in ",
+            "1": "",
+            "2": "Pending",
+            "3": "Completed",
+            "4": "Purchased: {0} classes",
+            "5": "Scan the QR code to pay",
+            "6": "QR code has expired",
+            "7": "QR code has expired，",
+            "8": ".",
+            "9": "The QR code will become invalid in ",
+            "10": "seconds.",
+            "11": "The order has been submitted successfully.",
+            "12": "No payment information found",
+            "13": "total: {0}"
+        },
+        "TYPE": "Form"
+    },
+    "KEY_RATING_PANEL": {
+        "TIP": {
+            "0": "If the evaluation is not made in time, the system defaults to praise",
+            "1": "Evaluation success",
+            "2": "Reviews cannot be edited after {0} days",
+            "3": "post a review"
+        },
+        "TITLE": "Rate the teacher"
+    },
+    "KEY_RECENT_PANEL": {
+        "TIP": "You can enter the classroom {0} minutes before the class starts",
+        "TITLE": "Recent Class"
+    },
+    "KEY_RECOMMEND_PANEL": {
+        "TITLE": "Recommended Courses"
+    },
+    "KEY_REGISTER_PANEL": {
+        "TIP": {
+            "0": "Have an account already?",
+            "1": "Please enter your given name.",
+            "2": "Please enter your family name.",
+            "3": "Language Proficiency Assessment Report"
+        },
+        "TITLE": "Book a free trial class now!"
+    },
+    "KEY_REGISTER_USER_PANEL": {
+        "BTN": {
+            "0": "Use another account to login"
+        },
+        "TIP": {
+            "0": "Contact number",
+            "1": "We gather your phone number so that we can arrange a free trial class for you.",
+            "2": "Date of Birth (Student)",
+            "3": "We can recommend more suitable courses according to your age.",
+            "4": "Where are you from?",
+            "5": "We will find teachers who speak the same language as you.",
+            "6": "Where is your residence/time zone?",
+            "7": "We will choose a teacher suitable for your time zone."
+        },
+        "WELCOME": "Welcome!"
+    },
+    "KEY_REPORT_DETAIL": {
+        "1": "Teacher comments",
+        "TIP": {
+            "0": "Learning situation"
+        },
+        "TITLE": "Lesson Report Details"
+    },
+    "KEY_REPORT_PANEL": {
+        "TIP": {
+            "0": "Language Proficiency Assessment Report"
+        }
+    },
+    "KEY_RESET_PW_PANEL": {
+        "LOGIN": "Login",
+        "TIP": {
+            "0": "Please enter a new password",
+            "1": "Confirm the new password",
+            "2": "The two passwords are inconsistent, please check the password.",
+            "3": "You have requested to reset the password for this account: {0}",
+            "4": "Successfully!"
+        },
+        "TITLE": "Reset the Password"
+    },
+    "KEY_SETTING_PANEL": {
+        "TIP": {
+            "0": "When other users view your profile, they will also see your profile picture.",
+            "1": "File limit: 2MB. Recommended size: 130 x 130 (px)"
+        },
+        "TITLE": "Basic Information"
+    },
+    "KEY_STUDENT_SCORE": {
+        "TIP": {
+            "0": "Please check if the rating is complete"
+        },
+        "TITLE": "Homework",
+        "TYPE": {
+            "0": "Attention",
+            "1": "Write",
+            "2": "Thinking ",
+            "3": "Enthusiasm",
+            "4": "EQ",
+            "5": "Listening ",
+            "6": "LQ",
+            "7": "Speaking ",
+            "8": "AQ",
+            "9": "Reading",
+            "10": "Performance in class",
+            "11": "Language Proficiency Assessment Level",
+            "12": "Classroom performance"
+        }
+    },
+    "KEY_SWITCH": {
+        "TIP": "Reminder: If you change the country or region when purchasing courses, there may be problems with your order",
+        "TITLE": "Choose Billing Currency and Language"
+    },
+    "KEY_USER_PANEL": {
+        "TIP": {
+            "0": "Lives in {0} ({1})",
+            "1": "Day {0}",
+            "2": ""
+        }
+    },
+    "密码必需包含字母和数字，且在6-18位之间": "The password must contain letters and numbers and be between 6-18 characters",
+    "少儿汉语": "Chinese course for children",
+    "少儿英语": "English course for children",
+    "成人汉语": "Chinese course for adults",
+    "成人英语": "English course for adults",
+    "请填写密码": "Please fill in the password",
+    "请填写有效邮箱": "Please provide a valid email address",
+    "人学过": "users"
+}
