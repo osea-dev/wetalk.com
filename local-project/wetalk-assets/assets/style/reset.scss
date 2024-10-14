@@ -1,0 +1,11 @@
+:root {
+    --SourceHanSans: "SourceHanSansCN";
+    --SourceHanSerif: "SourceHanSerifCN";
+}
+.lang-zh-tw {
+    --SourceHanSans: "SourceHanSansTW";
+    --SourceHanSerif: "SourceHanSerifTW";
+}
+.w-page {
+    font-family: var(--SourceHanSans);
+}
