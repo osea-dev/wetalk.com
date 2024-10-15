@@ -1,0 +1,3 @@
+@function w-h($percent) {
+    @return calc(var(--screen-h) * $percent);
+}

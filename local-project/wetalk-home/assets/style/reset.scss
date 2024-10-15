@@ -1,0 +1,113 @@
+:root {
+    --t-c-default: #{$t-c-default};
+    --t-s-default: #{$t-s-default};
+    --t-lh-root: #{$t-lh-default};
+    --main-bg-color: #fff;
+
+    /* #region 字体管理 */
+
+    // 内容宽度
+    --content-width: calc(#{$content-w} + #{$content-space * 2});
+}
+
+/* ---------------------------------- */
+/*          custom reset css          */
+/* ---------------------------------- */
+html {
+    font-family: var(--SourceHanSans);
+    font-size: var(--t-s-default);
+    font-weight: 500;
+    line-height: var(--t-lh-root);
+}
+body {
+    overflow-x: hidden;
+
+    user-select: none;
+
+    color: var(--t-c-default);
+    background-color: var(--main-bg-color);
+}
+i {
+    font-style: normal;
+}
+a {
+    display: inline-block;
+
+    vertical-align: middle;
+    &:hover {
+        color: var(--t-c-deeper);
+    }
+}
+img {
+    vertical-align: top;
+}
+nav {
+    display: block;
+}
+input {
+    line-height: em(45px, 16px);
+
+    width: 100%;
+    padding: 0 em(16px, 16px);
+
+    border-width: 0 !important;
+    border-radius: em(4px, 16px);
+    outline: none !important;
+    box-shadow: inset 0 0 0 1px #dde1e0;
+
+    appearance: none;
+    &:focus {
+        box-shadow: inset 0 0 0 2px #3b71fe;
+    }
+    &[data-error] {
+        box-shadow: inset 0 0 0 2px #d93237;
+    }
+    &[disabled] {
+        cursor: not-allowed;
+    }
+}
+input::placeholder {
+    color: rgba(#12141d, 0.3) !important;
+}
+input:input-placeholder {
+    color: rgba(#12141d, 0.3) !important;
+}
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #fff inset !important;
+}
+button {
+    border-width: 0;
+}
+select {
+    font-weight: 500;
+    line-height: em(45px, 16px);
+
+    width: 100%;
+    padding: 0 em(16px, 16px);
+    padding-right: em(38px, 16px);
+
+    cursor: pointer;
+
+    border-radius: em(4px, 16px);
+    outline: none !important;
+    background-color: #fff;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD7SURBVHgB7dW7DYMwEAZgG4mkZQRGYIRLE2WLiIkyQrJB2nQwAiMwQmpQuNiAFPEw9tl0ub9AYM6nj3OBEBwOh8P51wBcUgBIREB0D1tNZGuA2BWIceGLATg/dA8bRgoLQt2mwwpWUransizfgoQQ1/GxljJS+1/1Wu3GRLrbD9GbM8pkZggd9WGfu6l+A9Lk6lJN19wwKwgdNZE2N+0xHs3QEBLEgz6ebPpm/ZgG4PGJiLBENLq+Fj4QCmaoiws9NSrCCeKC6e8CEM4QG2Zs5Y0gQbYxi5AQZIgjhozwglgwXghviAHjjQiCzDBJCGKXaEzo35nD4XD2yBfwEatr1gd64QAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 14px);
+    background-position-y: center;
+    background-size: 17px;
+    box-shadow: inset 0 0 0 1px #dde1e0;
+
+    appearance: none;
+    &:focus {
+        box-shadow: inset 0 0 0 2px #3b71fe;
+    }
+    &[data-error] {
+        box-shadow: inset 0 0 0 2px #d93237;
+    }
+    &[disabled="disabled"] {
+        cursor: not-allowed;
+
+        background-size: 0;
+    }
+}

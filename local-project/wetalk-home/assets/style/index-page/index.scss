@@ -1,0 +1,390 @@
+// 固定图片比例站位
+@mixin image-placeholder(
+    $width,
+    $height,
+    $position: relative,
+    $type: 0,
+    $size: 0
+) {
+    @if ($position !=none) {
+        position: $position;
+    }
+    @if ($size != 0) {
+        width: $size;
+    } @else {
+        width: $width;
+    }
+    & > img {
+        @if ($type == "fit") {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: center;
+        } @else {
+            width: 100%;
+        }
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &::after {
+        display: block;
+
+        width: 100%;
+        padding-top: percent($height, $width);
+
+        content: "";
+    }
+}
+.w-page[data-page-type="IndexPage"] {
+    font-family: var(--SourceHanSerif);
+    font-weight: 700;
+    .home-body {
+        font-weight: 800;
+    }
+    /* #region swiper 控件层 */
+    .scene-box {
+        height: w-h(100);
+    }
+    .scene-wrapper {
+        width: 100%;
+        height: w-h(100);
+
+        background-color: #030855;
+    }
+    .scene-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        overflow: hidden;
+
+        width: 100%;
+        height: w-h(100);
+
+        pointer-events: none;
+
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .layer--scene {
+        width: 192vh;
+        max-width: 100%;
+        // width: 1920px;
+        // height: 1000px;
+        // @include image-placeholder(1920px, 1000px, $position: absolute);
+        // left: 50%;
+        // position: absolute;
+        height: w-h(100);
+
+        // transform: translateX(-960px);
+    }
+    .layer--el {
+        @include ab-cover;
+    }
+    .swiper-shadow {
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+
+        // visibility: hidden;
+        .swiper-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            visibility: hidden;
+            overflow: hidden;
+
+            width: 1px !important;
+            height: 1px !important;
+        }
+    }
+    .swiper-wrapper {
+        height: 100px;
+    }
+    .swiper-control {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        height: 100%;
+    }
+    .swiper-ctrl--inner {
+        top: auto;
+        right: auto;
+
+        padding: 12px 0;
+
+        transition: 0.36s ease;
+        transform: translate3d(0, 0, 0);
+        pointer-events: all;
+
+        border-radius: 20px;
+        background: rgb(0 0 0 / 0%);
+        .swiper-dot {
+            @include square(26px);
+            display: flex;
+
+            cursor: pointer;
+
+            align-items: center;
+            justify-content: center;
+            &::after {
+                @include circle(5px);
+                display: block;
+
+                content: "";
+                transition: 0.36s ease;
+
+                background-color: rgba(#fff, 0.6);
+            }
+            &:hover::after {
+                transform: scale(1.6);
+            }
+            &.active::after {
+                transform: scale(1.6);
+
+                background-color: #fff;
+            }
+        }
+        &:hover {
+            background: rgb(0 0 0 / 55%);
+        }
+    }
+    /* #endregion */
+
+    /* #region 探索更多提示 */
+    .layer-cover {
+        @include ab-cover;
+        font-size: 100px;
+
+        z-index: 200;
+
+        pointer-events: none;
+    }
+    .discover-box {
+        position: absolute;
+        right: 27px;
+        bottom: 3.6vh;
+        .img-discover {
+            @include image-placeholder(224px, 231px);
+            width: em(85px, 100px);
+        }
+        .text-box {
+            font-family: BodoniBold;
+            font-size: 13px;
+            line-height: 20px;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: percent(34px, 85px);
+
+            display: flex;
+
+            color: #fff;
+
+            align-items: center;
+            .text {
+                margin-right: 13px;
+            }
+            .ic {
+                @include space-placeholder(9px, 13px);
+
+                animation: down-arrow 2s 1s infinite alternate
+                    cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                animation-direction: initial;
+
+                background-image: url("@/assets/images/home/down-arrow.png");
+                background-repeat: repeat;
+                background-position: 0 -7px;
+                background-size: 100% auto;
+            }
+        }
+    }
+    /* #endregion */
+    @include media-breakpoint-down(lg) {
+        .discover-box {
+            transform: scale(0.7);
+            transform-origin: right bottom;
+            .text-box {
+                transform: scale(1.2);
+                transform-origin: left center;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .discover-box {
+            transform: scale(0.5);
+            transform-origin: right bottom;
+            .text-box {
+                transform: scale(1.2);
+                transform-origin: left center;
+            }
+        }
+    }
+}
+@keyframes down-arrow {
+    0% {
+        background-position: 0 -7px;
+    }
+    60% {
+        background-position: 0 -7px;
+    }
+    100% {
+        background-position: 0 13px;
+    }
+}
+.layer--scene {
+    font-size: min(100px, 10vh);
+
+    pointer-events: none;
+    .parallax-layer {
+        position: absolute !important;
+    }
+    /* #region 场景介绍信息 */
+    .info--box {
+        font-size: max(em(22px, 100px), 14px);
+
+        position: relative;
+        z-index: 100;
+        // bottom: 9.8vh;
+        bottom: em(98px, 22px);
+
+        width: em(700px, 22px);
+
+        transform: translate3d(0, 0, 0);
+        text-align: center;
+        .info-bg {
+            @include image-placeholder(1117px, 392px, $position: absolute);
+
+            top: 50%;
+            left: 50%;
+
+            overflow: visible;
+
+            width: em(1117px, 22px);
+
+            transform: translate(-50%, -50%);
+
+            background-image: url("@/assets/images/home/info-bg.png");
+            background-size: 100%;
+        }
+        .scene-intro {
+            font-weight: 700;
+            line-height: em(44px, 22px);
+
+            position: relative;
+            z-index: 10;
+
+            margin-bottom: em(42px, 22px);
+
+            color: #fff;
+        }
+        .img-tansuo {
+            position: relative;
+
+            display: flex;
+
+            width: em(149px, 22px);
+            margin: 0 auto;
+
+            cursor: pointer;
+            pointer-events: all;
+
+            align-items: center;
+            justify-content: center;
+
+            perspective: 3000px;
+            transform-style: preserve-3d;
+            .box-juanzou {
+                position: relative;
+
+                display: flex;
+                flex: 0 0 auto;
+
+                width: 100%;
+
+                transition: transform 0.26s ease;
+            }
+            .box-text {
+                position: absolute;
+                z-index: 300;
+                top: 0;
+                left: 0;
+                /* stylelint-disable-next-line selector-max-compound-selectors */
+                img {
+                    height: em(45px, 22px);
+                }
+            }
+            &:hover {
+                .box-juanzou {
+                    transform: translateZ(-200px);
+                }
+            }
+        }
+        .tansuo-center {
+            @include space-placeholder(299px, 91px);
+            position: relative;
+            z-index: 10;
+
+            width: 100%;
+            height: em(45px, 22px);
+            &::before {
+                position: absolute;
+                top: 0;
+                right: em(13px, 22px);
+                left: em(13px, 22px);
+
+                height: em(39px, 22px);
+
+                content: "";
+
+                background-color: #fff;
+            }
+        }
+        .tansuo-left,
+        .tansuo-right {
+            @include space-placeholder(28px, 91px);
+            position: absolute;
+
+            width: em(14px, 22px);
+
+            background-image: url("@/assets/images/home/tansuo.png");
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+        }
+        .tansuo-left {
+            position: absolute;
+            left: 0;
+        }
+        .tansuo-right {
+            position: absolute;
+            right: 0;
+
+            background-position-x: right;
+        }
+    }
+    /* #endregion */
+    @include media-breakpoint-down(sm) {
+        .layer-info {
+            align-items: center;
+            .info-bg {
+                display: none;
+            }
+            .info--box {
+                bottom: 0;
+
+                padding-top: em(180px, 22px);
+
+                transform: translate(0);
+            }
+        }
+        .scene-intro {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+/*
+ * @Description: 结构样式变量
+ * @Author: F-Stone
+ * @LastEditTime: 2022-06-19 18:50:36
+ */
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1760px,
+);
+
+$divide-line: 1px solid #e1e5f1;

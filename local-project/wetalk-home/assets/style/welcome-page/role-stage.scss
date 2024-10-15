@@ -1,0 +1,551 @@
+@mixin calc-layer-pos($z, $z2: 0) {
+    transform: translateZ($z);
+    & > * {
+        @if ($z2 != 0) {
+            transform: translateZ(-$z2);
+        }
+        else {
+            transform: translateZ(-$z);
+        }
+    }
+}
+/*
+ * 角色场景
+ */
+.role-stage {
+    font-size: min(100px, 5vw);
+
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+    .role-scene {
+        position: relative;
+
+        width: 100%;
+        height: 100vh;
+    }
+    .role-container {
+        @include ab-cover;
+        transform-origin: center center;
+
+        perspective: 10000px;
+        perspective-origin: center center;
+        transform-style: preserve-3d;
+    }
+    .layer {
+        @include ab-cover;
+
+        pointer-events: none;
+
+        transform-style: preserve-3d;
+        .img-box {
+            transform-style: preserve-3d;
+        }
+    }
+}
+
+/*
+ * 场景元素
+ */
+/* stylelint-disable-next-line no-duplicate-selectors */
+.role-stage {
+    // 纵向文字
+    .layer-v-text {
+        .text-box {
+            font-family: var(--SourceHanSerif);
+            font-weight: 700;
+
+            position: absolute;
+            top: calc(50% - em(295px, 100px));
+            left: calc(50% + em(589px, 100px));
+            .text-inner {
+                font-size: 23px;
+                line-height: em(54px, 24px);
+
+                text-indent: -0.58em;
+
+                writing-mode: vertical-rl;
+            }
+            @include media-breakpoint-down(xxl) {
+                .text-inner {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    // 横向文字
+    .layer-r-text {
+        .text-box {
+            position: absolute;
+            top: calc(50% + em(112px, 100px));
+            left: calc(50% + em(78px, 100px));
+
+            width: min(670px, 35vw);
+            .text-inner {
+                font-size: 14px;
+                line-height: em(28px, 14px);
+            }
+        }
+    }
+    // 艺术字
+    .layer-yishuzu {
+        .img-box {
+            @include image-placeholder(273px, 334px, $position: absolute);
+
+            position: absolute;
+            bottom: calc(50% - em(32px, 100px));
+            left: calc(50% + em(78px, 100px));
+
+            width: em(273px, 100px);
+        }
+    }
+    // 国 - 字
+    .layer-guo {
+        .img-box {
+            @include image-placeholder(150px, 182px, $position: absolute);
+            top: calc(50% + em(141px, 100px));
+            right: calc(50% + em(210px, 100px));
+        }
+    }
+    // 中 - 字
+    .layer-zhong {
+        .img-box {
+            @include image-placeholder(170px, 290px, $position: absolute);
+            top: calc(50% - em(113px, 100px));
+            right: calc(50% + em(507px, 100px));
+        }
+    }
+    // 众语
+    .layer-zhongyu {
+        .img-box {
+            @include image-placeholder(79px, 181px, $position: absolute);
+            top: calc(50% + em(131px, 100px));
+            right: calc(50% + em(644px, 100px));
+
+            width: em(79px, 100px);
+        }
+    }
+    // 白云
+    .layer-baiyun {
+        .img-box {
+            @include image-placeholder(1700px, 252px, $position: absolute);
+        }
+    }
+    // 人物 - 图片
+    .layer-renwu {
+        // .img-box {
+        //     @include image-placeholder(413px, 755.8px, $position: absolute);
+        //     top: calc(50% - em(329px, 100px));
+        //     right: calc(50% + em(223px, 100px));
+
+        //     overflow: visible;
+
+        //     width: em(413px, 100px);
+        // }
+        img {
+            filter: drop-shadow(0 6px 5px rgb(51 51 51 / 30%));
+        }
+    }
+}
+
+/**
+ * 孔子场景
+ */
+.role--kong {
+    // #region image layers
+    // 云
+    .layer-7 {
+        transform: translateZ(8000px) scale(0.2);
+        .img-box {
+            @include image-placeholder(2000px, 739px, $position: absolute);
+            bottom: calc(50% - em(700px, 100px));
+            left: calc(50% + em(130px, 100px));
+
+            width: em(2000px, 100px);
+        }
+    }
+    // 孔子 - 图
+    .layer-5 {
+        transform: translateZ(6000px) scale(0.4);
+        .img-box {
+            @include image-placeholder(413px, 755.8px, $position: absolute);
+            top: calc(50% - em(329px, 100px));
+            right: calc(50% + em(223px, 100px));
+
+            overflow: visible;
+
+            width: em(413px, 100px);
+        }
+    }
+    // 众语
+    .layer-4 {
+        transform: translateZ(4000px) scale(0.6);
+    }
+    // 中
+    .layer-3 {
+        transform: translateZ(4000px) scale(0.6);
+    }
+    // 国
+    .layer-2 {
+        transform: translateZ(4000px) scale(0.6);
+    }
+    // 孔子 - 字
+    .layer-6 {
+        transform: translateZ(5000px) scale(0.5);
+    }
+    // 山
+    .layer-1 {
+        transform: translateZ(1000px) scale(0.9);
+        .img-box {
+            @include image-placeholder(1281px, 460px, $position: absolute);
+            right: calc(50% - em(195px, 100px));
+            bottom: calc(50% - em(105px, 100px));
+        }
+    }
+    // #endregion
+    // 中庸
+    .layer-8 {
+        transform: translateZ(3000px) scale(0.7);
+    }
+    .layer-9 {
+        transform: translateZ(2000px) scale(0.8);
+    }
+    .layer-11,
+    .layer-10 {
+        transform: translateZ(8000px) scale(0.2);
+        .img-box {
+            right: -425px;
+            bottom: -52px;
+        }
+    }
+}
+
+/**
+ * 孟子场景
+ */
+.role--meng {
+    .layer-zhongyu {
+        transform: translateZ(4000px) scale(0.6);
+    }
+    .layer-zhong {
+        transform: translateZ(4000px) scale(0.6);
+    }
+    .layer-guo {
+        transform: translateZ(4000px) scale(0.6);
+    }
+    .layer-v-text {
+        transform: translateZ(3000px) scale(0.7);
+    }
+    .layer-r-text {
+        transform: translateZ(2000px) scale(0.8);
+    }
+    .layer-yishuzu {
+        transform: translateZ(5000px) scale(0.5);
+    }
+    .layer-renwu {
+        transform: translateZ(6000px) scale(0.4);
+        .img-box {
+            @include image-placeholder(2608px, 4085px, $position: absolute);
+            top: calc(50% - em(334px, 100px));
+            right: calc(50% + em(192px, 100px));
+
+            overflow: visible;
+
+            width: em(485px, 100px);
+        }
+    }
+    .layer-bi {
+        transform: translateZ(5500px) scale(0.55);
+        .img-box {
+            @include image-placeholder(537px, 553px, $position: absolute);
+            top: calc(50% - em(225px, 100px));
+            right: calc(50% + em(49px, 100px));
+
+            width: em(537px, 100px);
+        }
+    }
+    .layer-shan {
+        transform: translateZ(8000px) scale(0.2);
+        .img-box {
+            @include image-placeholder(1582px, 321px, $position: absolute);
+            top: calc(50% + em(230px, 100px));
+            left: calc(50% - em(112px, 100px));
+
+            width: em(1582px, 100px);
+        }
+    }
+    .layer-baiyun {
+        transform: translateZ(8000px) scale(0.2);
+        .img-box {
+            top: calc(50% + em(124px, 100px));
+            right: calc(50% - em(56px, 100px));
+        }
+    }
+}
+/**
+ * 老子场景
+ */
+.role--lao {
+    .layer-zhongyu {
+        transform: translateZ(4000px) scale(0.6);
+    }
+    .layer-zhong {
+        transform: translateZ(4000px) scale(0.6);
+    }
+    .layer-guo {
+        transform: translateZ(4000px) scale(0.6);
+    }
+    .layer-v-text {
+        transform: translateZ(3000px) scale(0.7);
+    }
+    .layer-r-text {
+        transform: translateZ(2000px) scale(0.8);
+    }
+    .layer-yishuzu {
+        transform: translateZ(5000px) scale(0.5);
+    }
+    .layer-renwu {
+        transform: translateZ(6000px) scale(0.4);
+        .img-box {
+            @include image-placeholder(424px, 778px, $position: absolute);
+            top: calc(50% - em(345px, 100px));
+            right: calc(50% + em(212px, 100px));
+
+            width: em(424px, 100px);
+        }
+    }
+    .layer-hehua {
+        transform: translateZ(1000px) scale(0.9);
+        .img-box {
+            @include image-placeholder(385px, 515px, $position: absolute);
+            top: calc(50% + em(12px, 100px));
+            left: calc(50% + em(300px, 100px));
+
+            width: em(385px, 100px);
+        }
+    }
+}
+.role--zhuang {
+    .layer-v-text {
+        transform: translateZ(3000px) scale(0.7);
+    }
+    .layer-r-text {
+        transform: translateZ(2000px) scale(0.8);
+    }
+    .layer-yishuzu {
+        transform: translateZ(5000px) scale(0.5);
+    }
+    .layer-renwu {
+        transform: translateZ(6000px) scale(0.4);
+        .img-box {
+            @include image-placeholder(2120px, 4600px, $position: absolute);
+            top: calc(50% - em(359px, 100px));
+            right: calc(50% + em(255px, 100px));
+
+            width: em(363px, 100px);
+        }
+    }
+    .layer-shu {
+        transform: translateZ(7000px) scale(0.3);
+        .img-box {
+            @include image-placeholder(897px, 673px, $position: absolute);
+            top: calc(50% + em(60px, 100px));
+            right: calc(50% + em(33px, 100px));
+
+            width: em(897px, 100px);
+        }
+    }
+    .layer-beijing {
+        transform: translateZ(3000px) scale(0.7);
+        .img-box {
+            @include image-placeholder(572px, 1542px, $position: absolute);
+            right: calc(50% + em(120px, 100px));
+            bottom: calc(50% - em(587px, 100px));
+
+            width: em(572px, 100px);
+        }
+    }
+    // 众语
+    .layer-zhongyu {
+        transform: translateZ(4000px) scale(0.6);
+        .img-box {
+            top: calc(50% - em(128px, 100px));
+            right: calc(50% + em(616px, 100px));
+        }
+    }
+}
+.role--all {
+    .layer-role {
+        width: 1558px;
+        max-width: 81.2%;
+        margin: 0 auto;
+
+        gap: em(103px, 100px);
+        & > div {
+            display: flex;
+
+            width: em(317px, 100px);
+            height: 100vh;
+
+            align-items: center;
+        }
+        .img-box {
+            @include image-placeholder(775px, 1415px);
+
+            overflow: visible;
+
+            width: 100%;
+
+            /* stylelint-disable-next-line rule-empty-line-before */
+            & > img {
+                top: 50%;
+
+                transform: translateY(percent(-262px, 578px));
+                // pointer-events: all;
+
+                filter: drop-shadow(0 6px 5px rgb(51 51 51 / 30%));
+                &:hover {
+                    /* stylelint-disable-next-line */
+                    & + .decoration-box {
+                        opacity: 1;
+                    }
+                }
+            }
+            .decoration-box {
+                @include space-placeholder(159px, 194px);
+                position: absolute;
+                z-index: 100;
+                right: percent(-43px, 317px);
+                bottom: percent(143px, 578px);
+
+                width: percent(140px, 317px);
+
+                transition: 0.36s ease;
+
+                opacity: 1;
+            }
+            .text-box {
+                @include image-placeholder(159px, 194px, $position: absolute);
+                z-index: 10;
+                top: 0;
+                left: 0;
+
+                width: percent(130px, 140px);
+            }
+            .draw-box {
+                @include image-placeholder(317px, 342px, $position: absolute);
+                top: percent(-60px, 194px);
+                right: percent(40px, 159px);
+
+                width: percent(317px, 159px);
+            }
+        }
+        .img-meng {
+            & > img {
+                left: 50%;
+
+                width: em(372px, 100px);
+                max-width: initial;
+                margin: 0 auto;
+
+                transform: translateX(-50%) translateY(percent(-262px, 578px));
+            }
+        }
+    }
+    .layer-role-1 {
+        transform: translateZ(5000px) scale(0.5);
+    }
+    .layer-role-2 {
+        transform: translateZ(5000px) scale(0.5);
+    }
+    .layer-role-3 {
+        transform: translateZ(5000px) scale(0.5);
+    }
+    .layer-role-4 {
+        transform: translateZ(5000px) scale(0.5);
+    }
+    .layer-shan {
+        transform: translateZ(3000px) scale(0.7);
+        .img-box {
+            @include image-placeholder(1582px, 321px, $position: absolute);
+            right: calc(50% - em(214px, 100px));
+            bottom: calc(50% - em(130px, 100px));
+            // bottom: calc(50% - em(225px, 100px));
+
+            width: em(1243px, 100px);
+        }
+    }
+    .layer-cloud {
+        transform: translateZ(6000px) scale(0.4);
+        .img-box {
+            @include image-placeholder(2000px, 739px, $position: absolute);
+            bottom: calc(50% - em(770px, 100px));
+            left: calc(50% + em(100px, 100px));
+
+            width: em(2000px, 100px);
+        }
+    }
+    .layer-cloud-left {
+        transform: translateZ(9000px) scale(0.1);
+        .img-box {
+            @include image-placeholder(2000px, 739px, $position: absolute);
+            right: calc(50% + em(200px, 100px));
+            bottom: calc(50% - em(880px, 100px));
+
+            width: em(2000px, 100px);
+        }
+    }
+    .layer-btn {
+        .img-box {
+            @include image-placeholder(149px, 45px, $position: absolute);
+            right: 0;
+            bottom: 50px;
+            left: 0;
+
+            margin: 0 auto;
+
+            cursor: pointer;
+            pointer-events: all;
+
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            &:hover {
+                img {
+                    // transform: translateZ(30px);
+                }
+                &::before {
+                    transform: translateZ(-100px);
+                }
+            }
+            &::before {
+                @include ab-cover;
+                content: "";
+                transition: 0.3s ease;
+
+                background-image: url("@/assets/images/index/all/btn-bg.png");
+            }
+            img {
+                transition: 0.3s ease;
+            }
+        }
+    }
+    .layer-logo {
+        .img-box {
+            @include image-placeholder(280px, 100px, $position: absolute);
+            top: 42px;
+            right: 0;
+            left: 0;
+
+            width: em(166px, 100px);
+            margin: 0 auto;
+        }
+    }
+}
