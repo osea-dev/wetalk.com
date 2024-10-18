@@ -1,7 +1,7 @@
 <template>
-    <div :class="$style['scene-module']" ref="sceneModule">
+    <div ref="sceneModule" :class="$style['scene-module']">
         <div :class="$style['scene-playgroup']" class="scroll-container">
-            <div class="swiper-shadow" ref="swiperShadow">
+            <div ref="swiperShadow" class="swiper-shadow">
                 <div class="scene-wrapper">
                     <div class="scene-box">
                         <component
@@ -10,16 +10,16 @@
                             :key="item.index"
                             :data-index="item.index"
                             class="scene-item"
-                            @openNews="showNews = true"
                             style="display: none"
+                            @openNews="showNews = true"
                         ></component>
                     </div>
                 </div>
                 <div class="swiper-wrapper">
                     <div
-                        class="swiper-slide"
                         v-for="item in SceneList"
                         :key="item.index"
+                        class="swiper-slide"
                         :data-index="item.index"
                     ></div>
                 </div>
@@ -58,18 +58,18 @@
         <div :class="[$style['scene-story'], $style['module-side-area']]">
             <div :class="$style['wrapper--story']">
                 <div
-                    @click.self="showStory = false"
                     :class="$style['layer-left-side']"
                     :data-active="showStory"
+                    @click.self="showStory = false"
                 >
                     <div :class="$style['left-side-inner']">
                         <div :class="$style['scroll-container']">
                             <template v-for="(item, index) in SceneList">
                                 <div
-                                    class="scroll-inner"
                                     v-if="currentScene === item.index"
-                                    :data-index="item.index"
                                     :key="index"
+                                    class="scroll-inner"
+                                    :data-index="item.index"
                                 >
                                     <h2 class="story-title">
                                         {{ item.story.title }}
@@ -116,9 +116,9 @@
         <div :class="[$style['module-news'], $style['module-side-area']]">
             <div :class="$style['wrapper--news']">
                 <div
-                    @click.self="showNews = false"
                     :class="$style['layer-left-side']"
                     :data-active="showNews"
+                    @click.self="showNews = false"
                 >
                     <div :class="$style['left-side-inner']">
                         <div :class="$style['scroll-container']">

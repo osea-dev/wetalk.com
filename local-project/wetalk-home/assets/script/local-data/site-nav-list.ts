@@ -16,6 +16,66 @@ export type TYPE_FOLDER_NAV = {
 
 export const siteNavList: (TYPE_LINK_NAV | TYPE_FOLDER_NAV)[] = [
     { type: "link", link: link.index, title: "KEY_NAV.首页", name: "index" },
+    // {
+    //     type: "folder",
+    //     title: "Courses",
+    //     subnav: [
+    //         {
+    //             type: "link",
+    //             link: "",
+    //             title: "Philippines",
+    //             name: "philippines",
+    //         },
+    //         {
+    //             type: "link",
+    //             link: "",
+    //             title: "Singapore",
+    //             name: "singapore",
+    //         },
+    //     ],
+    // },
+    // {
+    //     type: "folder",
+    //     title: "About WeTalk",
+    //     subnav: [
+    //         {
+    //             type: "link",
+    //             link: "",
+    //             title: "History",
+    //             name: "history",
+    //         },
+    //         {
+    //             type: "link",
+    //             link: "",
+    //             title: "Campus",
+    //             name: "campus",
+    //         },
+    //         {
+    //             type: "link",
+    //             link: link.charity,
+    //             title: "Charity",
+    //             name: "charity",
+    //         },
+    //     ],
+    // },
+    // {
+    //     type: "link",
+    //     link: "",
+    //     title: "Educational Tours",
+    //     name: "educationalTours",
+    // },
+    // {
+    //     type: "link",
+    //     link: "",
+    //     title: "News",
+    //     name: "news",
+    // },
+    // {
+    //     type: "link",
+    //     link: "",
+    //     title: "Resources",
+    //     name: "resources",
+    // },
     {
         type: "folder",
         title: "KEY_NAV.众语集",
@@ -93,30 +153,30 @@ export const siteNavList: (TYPE_LINK_NAV | TYPE_FOLDER_NAV)[] = [
             },
         ],
     },
-    // {
-    //     type: "folder",
-    //     title: "KEY_NAV.众语学",
-    //     subnav: [
-    //         {
-    //             type: "link",
-    //             link: link.chinese,
-    //             title: "KEY_NAV.语言学",
-    //             name: "chinese",
-    //         },
-    //         {
-    //             type: "link",
-    //             link: link.sinology,
-    //             title: "KEY_NAV.潮国学",
-    //             name: "sinology",
-    //         },
-    //         {
-    //             type: "link",
-    //             link: link.science,
-    //             title: "KEY_NAV.真科学",
-    //             name: "science",
-    //         },
-    //     ],
-    // },
+    {
+        type: "folder",
+        title: "KEY_NAV.众语学",
+        subnav: [
+            {
+                type: "link",
+                link: link.chinese,
+                title: "KEY_NAV.语言学",
+                name: "chinese",
+            },
+            {
+                type: "link",
+                link: link.sinology,
+                title: "KEY_NAV.潮国学",
+                name: "sinology",
+            },
+            {
+                type: "link",
+                link: link.science,
+                title: "KEY_NAV.真科学",
+                name: "science",
+            },
+        ],
+    },
     {
         type: "link",
         link: link.education,
@@ -133,6 +193,7 @@ export const siteNavList: (TYPE_LINK_NAV | TYPE_FOLDER_NAV)[] = [
     {
         type: "link",
         link: link.studyAbroad,
+        // title: "KEY_NAV.游学留学",
         title: "KEY_NAV.游学留学",
         name: "studyAbroad",
     },
@@ -144,7 +205,7 @@ export const siteNavList: (TYPE_LINK_NAV | TYPE_FOLDER_NAV)[] = [
                 type: "link",
                 link: link.charity,
                 title: "KEY_NAV.公益慈善",
-                name: "charity",
+                name: "charityy",
             },
             {
                 type: "link",

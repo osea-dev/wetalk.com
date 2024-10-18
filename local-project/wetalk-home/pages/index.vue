@@ -1,9 +1,9 @@
 <template>
     <main
         id="home-body"
+        ref="homePage"
         class="w-body w-module home-body"
         :class="customClass"
-        ref="homePage"
     >
         <SceneModule />
     </main>
@@ -16,6 +16,18 @@ import { defineComponent } from "@nuxtjs/composition-api";
 import { computed } from "vue";
 
 export default defineComponent({
+    name: "IndexPage",
+    components: { SceneModule },
+    layout: "index",
+    setup() {
+        const siteStore = useSiteStore();
+        const customClass = computed(() => {
+            return siteStore.minNavIsOpen ? "relative z-10" : "";
+        });
+        return {
+            customClass,
+        };
+    },
     head() {
         return {
             title: this.$i18n.t("KEY_SEO.INDEX.TITLE"),
@@ -31,18 +43,6 @@ export default defineComponent({
                     content: this.$i18n.t("KEY_SEO.INDEX.DESC"),
                 },
             ],
-        };
-    },
-    name: "IndexPage",
-    layout: "index",
-    components: { SceneModule },
-    setup() {
-        const siteStore = useSiteStore();
-        const customClass = computed(() => {
-            return siteStore.minNavIsOpen ? "relative z-10" : "";
-        });
-        return {
-            customClass,
         };
     },
 });
