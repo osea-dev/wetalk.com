@@ -44,19 +44,19 @@
                             </div>
                             <div :class="$style['item-images-box']">
                                 <div :class="$style['item-imgs']">
-                                    <nuxt-img
+                                    <img
                                         class="relative"
                                         :class="$style['item-thumb']"
                                         :src="item.thumb"
                                         alt=""
                                     />
-                                    <nuxt-img
+                                    <img
                                         class="relative wow animate__fadeInUp-100 animation-delay-2"
                                         :class="$style['decorate-1']"
                                         src="@/assets/images/chinese/level-icon-1.png"
                                         alt=""
                                     />
-                                    <nuxt-img
+                                    <img
                                         class="relative wow animate__fadeInUp-50 animation-delay-1"
                                         :class="$style['decorate-2']"
                                         src="@/assets/images/chinese/level-icon-2.png"

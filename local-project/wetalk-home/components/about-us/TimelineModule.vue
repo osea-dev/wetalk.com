@@ -16,7 +16,7 @@
                                 }}
                             </div>
                             <div :class="$style['time-thumb']">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/about-us/time-0.png"
                                     alt=""
                                 />
@@ -67,7 +67,7 @@
                                                 class="swiper-slide wow animate__fadeInRight-30_percent"
                                                 :class="$style['img-box']"
                                             >
-                                                <nuxt-img :src="item" alt="" />
+                                                <img :src="item" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -129,7 +129,7 @@
                                             class="swiper-slide wow animate__fadeInRight-30_percent"
                                             :class="$style['img-box']"
                                         >
-                                            <nuxt-img :src="item" alt="" />
+                                            <img :src="item" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@
                                 }}
                             </div>
                             <div :class="$style['time-thumb']">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/about-us/time-1.png"
                                     alt=""
                                 />

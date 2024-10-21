@@ -27,7 +27,7 @@
                             {{ $t("KEY_PAGE_SCIENCE.EDUCATION.DESC[1]") }}
                         </p>
                         <div :class="$style['module-bg']">
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/science/edu-bg.png"
                                 alt=""
                             />
@@ -55,7 +55,7 @@
                                 class="flex"
                             >
                                 <div :class="$style['intro-thumb']">
-                                    <nuxt-img :src="item.icon" alt="" />
+                                    <img :src="item.icon" alt="" />
                                 </div>
                                 <div :class="$style['intro-info']">
                                     <div :class="$style['intro-title']">

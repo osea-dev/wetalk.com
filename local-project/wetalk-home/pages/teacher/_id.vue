@@ -135,7 +135,7 @@
                         class="relative z-10 flex sm:block sm:w-full"
                     >
                         <div :class="$style['thumb-box']" class="wow-group-2">
-                            <nuxt-img :src="teacherDetail.photo" alt="" />
+                            <img :src="teacherDetail.photo" alt="" />
                             <div
                                 :class="$style['icon']"
                                 class="wow animate__fadeInUp-50"

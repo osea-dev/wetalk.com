@@ -62,10 +62,7 @@
                         :class="$style['module-map']"
                         class="wow animate__fadeInRight-50"
                     >
-                        <nuxt-img
-                            src="@/assets/images/about-us/map.png"
-                            alt=""
-                        />
+                        <img src="@/assets/images/about-us/map.png" alt="" />
                     </div>
                 </div>
             </div>

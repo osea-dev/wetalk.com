@@ -12,7 +12,7 @@
             class="wow animate__fadeInUp-100 md:grid md:grid-cols-2 sm:grid-cols-1"
         >
             <div :class="$style['item-thumb']">
-                <nuxt-img :src="item.img" alt="" />
+                <img :src="item.img" alt="" />
             </div>
             <div :class="$style['item-info']">
                 <div

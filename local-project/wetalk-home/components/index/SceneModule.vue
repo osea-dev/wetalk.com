@@ -44,10 +44,7 @@
                     <div class="module-inner relative w-full h-full">
                         <div class="discover-box">
                             <div class="img-discover">
-                                <nuxt-img
-                                    src="@/assets/images/home/mo.png"
-                                    alt=""
-                                />
+                                <img src="@/assets/images/home/mo.png" alt="" />
                             </div>
                             <div class="text-box">
                                 <span class="text">discover</span>
@@ -89,7 +86,7 @@
                         </div>
                         <div class="story-footer">
                             <div class="story-logo">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/home/stroy-logo.png"
                                     alt=""
                                 />
@@ -140,7 +137,7 @@
                                         "
                                     >
                                         <div :class="$style['item-thumb']">
-                                            <nuxt-img :src="item.img" alt="" />
+                                            <img :src="item.img" alt="" />
                                         </div>
                                         <div :class="$style['item-info']">
                                             <div :class="$style['item-title']">
@@ -169,7 +166,7 @@
                                         @click="playVideo(item.video)"
                                     >
                                         <div :class="$style['item-thumb']">
-                                            <nuxt-img :src="item.img" alt="" />
+                                            <img :src="item.img" alt="" />
                                             <div
                                                 :class="$style['item-cover']"
                                                 class="flex justify-center items-center"

@@ -5,7 +5,7 @@
                 <!-- 背景 -->
                 <div class="layer layer-1">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/beijing.png"
                             alt=""
                         />
@@ -14,7 +14,7 @@
                 <!-- 国 -->
                 <div class="layer layer-2 layer-guo">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/guo.png"
                             alt=""
                         />
@@ -23,7 +23,7 @@
                 <!-- 中 -->
                 <div class="layer layer-3 layer-zhong">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/zhong.png"
                             alt=""
                         />
@@ -32,7 +32,7 @@
                 <!-- 众语 -->
                 <div class="layer layer-4 layer-zhongyu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/zhongyu.png"
                             alt=""
                         />
@@ -41,7 +41,7 @@
                 <!-- 孔子 - 图 -->
                 <div class="layer layer-5">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/kongzi.png"
                             alt=""
                         />
@@ -50,7 +50,7 @@
                 <!-- 孔子 - 字 -->
                 <div class="layer layer-6 layer-yishuzu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/kongzizi.png"
                             alt=""
                         />
@@ -59,7 +59,7 @@
                 <!-- 云 -->
                 <div class="layer layer-7">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/yun.png"
                             alt=""
                         />
@@ -90,7 +90,7 @@
                 </div>
                 <div class="layer layer-10 layer-baiyun">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/baiyun.png"
                             alt=""
                         />
@@ -98,7 +98,7 @@
                 </div>
                 <div class="layer layer-11 layer-baiyun">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/baiyun.png"
                             alt=""
                         />
@@ -109,7 +109,7 @@
                 <!-- 国 -->
                 <div class="layer layer-guo">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/guo.png"
                             alt=""
                         />
@@ -118,7 +118,7 @@
                 <!-- 中 -->
                 <div class="layer layer-zhong">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/zhong.png"
                             alt=""
                         />
@@ -127,7 +127,7 @@
                 <!-- 众语 -->
                 <div class="layer layer-zhongyu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/zhongyu.png"
                             alt=""
                         />
@@ -135,7 +135,7 @@
                 </div>
                 <div class="layer layer-baiyun layer-baiyun1">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/baiyun.png"
                             alt=""
                         />
@@ -143,7 +143,7 @@
                 </div>
                 <div class="layer layer-baiyun layer-baiyun2">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/baiyun.png"
                             alt=""
                         />
@@ -151,7 +151,7 @@
                 </div>
                 <div class="layer layer-bi">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/meng/bi.png"
                             alt=""
                         />
@@ -159,7 +159,7 @@
                 </div>
                 <div class="layer layer-renwu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/meng/renwu.png"
                             alt=""
                         />
@@ -167,7 +167,7 @@
                 </div>
                 <div class="layer layer-shan">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/meng/shan.png"
                             alt=""
                         />
@@ -175,7 +175,7 @@
                 </div>
                 <div class="layer layer-yishuzu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/meng/wenzi.png"
                             alt=""
                         />
@@ -207,7 +207,7 @@
                 <!-- 国 -->
                 <div class="layer layer-guo">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/guo.png"
                             alt=""
                         />
@@ -216,7 +216,7 @@
                 <!-- 中 -->
                 <div class="layer layer-zhong">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/zhong.png"
                             alt=""
                         />
@@ -225,7 +225,7 @@
                 <!-- 众语 -->
                 <div class="layer layer-zhongyu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/zhongyu.png"
                             alt=""
                         />
@@ -233,7 +233,7 @@
                 </div>
                 <div class="layer layer-renwu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/lao/renwu.png"
                             alt=""
                         />
@@ -241,7 +241,7 @@
                 </div>
                 <div class="layer layer-yishuzu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/lao/wenzi.png"
                             alt=""
                         />
@@ -249,7 +249,7 @@
                 </div>
                 <div class="layer layer-hehua">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/lao/hehua.png"
                             alt=""
                         />
@@ -284,7 +284,7 @@
             <div class="role-container role--zhuang">
                 <div class="layer layer-beijing">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/zhuang/beijing.png"
                             alt=""
                         />
@@ -293,7 +293,7 @@
                 <!-- 众语 -->
                 <div class="layer layer-zhongyu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/zhongyu.png"
                             alt=""
                         />
@@ -301,7 +301,7 @@
                 </div>
                 <div class="layer layer-renwu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/zhuang/renwu.png"
                             alt=""
                         />
@@ -309,7 +309,7 @@
                 </div>
                 <div class="layer layer-yishuzu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/zhuang/wenzi.png"
                             alt=""
                         />
@@ -317,7 +317,7 @@
                 </div>
                 <div class="layer layer-shu">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/zhuang/shu.png"
                             alt=""
                         />
@@ -348,12 +348,12 @@
             <div class="role-container role--all">
                 <div class="layer layer-logo">
                     <Link class="img-box" :to="linkManage.index">
-                        <nuxt-img data-src="@/assets/images/logo.png" alt="" />
+                        <img data-src="@/assets/images/logo.png" alt="" />
                     </Link>
                 </div>
                 <div class="layer layer-shan">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/meng/shan.png"
                             alt=""
                         />
@@ -362,19 +362,19 @@
                 <div class="layer layer-role layer-role-1 grid grid-cols-4">
                     <div>
                         <div class="img-box img-kong">
-                            <nuxt-img
+                            <img
                                 data-src="@/assets/images/index/kong/kongzi.png"
                                 alt=""
                             />
                             <div class="decoration-box">
                                 <div class="text-box">
-                                    <nuxt-img
+                                    <img
                                         data-src="@/assets/images/index/kong/kongzizi.png"
                                         alt=""
                                     />
                                 </div>
                                 <div class="draw-box">
-                                    <nuxt-img
+                                    <img
                                         data-src="@/assets/images/index/all/decoration.png"
                                         alt=""
                                     />
@@ -390,19 +390,19 @@
                     <div><div class="img-box img-kong"></div></div>
                     <div>
                         <div class="img-box img-meng">
-                            <nuxt-img
+                            <img
                                 data-src="@/assets/images/index/meng/renwu.png"
                                 alt=""
                             />
                             <div class="decoration-box">
                                 <div class="text-box">
-                                    <nuxt-img
+                                    <img
                                         data-src="@/assets/images/index/meng/wenzi.png"
                                         alt=""
                                     />
                                 </div>
                                 <div class="draw-box">
-                                    <nuxt-img
+                                    <img
                                         data-src="@/assets/images/index/all/decoration.png"
                                         alt=""
                                     />
@@ -420,19 +420,19 @@
                     </div>
                     <div>
                         <div class="img-box img-lao">
-                            <nuxt-img
+                            <img
                                 data-src="@/assets/images/index/lao/renwu.png"
                                 alt=""
                             />
                             <div class="decoration-box">
                                 <div class="text-box">
-                                    <nuxt-img
+                                    <img
                                         data-src="@/assets/images/index/lao/wenzi.png"
                                         alt=""
                                     />
                                 </div>
                                 <div class="draw-box">
-                                    <nuxt-img
+                                    <img
                                         data-src="@/assets/images/index/all/decoration.png"
                                         alt=""
                                     />
@@ -456,19 +456,19 @@
                     </div>
                     <div>
                         <div class="img-box img-zhuang">
-                            <nuxt-img
+                            <img
                                 data-src="@/assets/images/index/zhuang/renwu.png"
                                 alt=""
                             />
                             <div class="decoration-box">
                                 <div class="text-box">
-                                    <nuxt-img
+                                    <img
                                         data-src="@/assets/images/index/zhuang/wenzi.png"
                                         alt=""
                                     />
                                 </div>
                                 <div class="draw-box">
-                                    <nuxt-img
+                                    <img
                                         data-src="@/assets/images/index/all/decoration.png"
                                         alt=""
                                     />
@@ -479,7 +479,7 @@
                 </div>
                 <div class="layer layer-cloud">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/yun.png"
                             alt=""
                         />
@@ -487,7 +487,7 @@
                 </div>
                 <div class="layer layer-cloud-left">
                     <div class="img-box">
-                        <nuxt-img
+                        <img
                             data-src="@/assets/images/index/kong/yun.png"
                             alt=""
                         />
@@ -495,7 +495,7 @@
                 </div>
                 <div class="layer layer-btn">
                     <div class="img-box" @click="goToIndexPage">
-                        <nuxt-img :data-src="TANSUO_IMG" alt="" />
+                        <img :data-src="TANSUO_IMG" alt="" />
                     </div>
                 </div>
             </div>

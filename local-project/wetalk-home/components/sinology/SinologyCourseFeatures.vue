@@ -29,7 +29,7 @@
                 </div>
                 <div class="state-pos--right wow animate__fadeInRight-50">
                     <div :class="$style['thumb-box']">
-                        <nuxt-img
+                        <img
                             src="@/assets/images/sinology/course-feature.png"
                             alt=""
                         />

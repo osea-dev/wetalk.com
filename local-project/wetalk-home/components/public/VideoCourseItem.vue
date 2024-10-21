@@ -5,7 +5,7 @@
     >
         <div :class="$style['item-thumb']" class="flex-grow-0">
             <div :class="$style['inner']">
-                <nuxt-img :src="data.img" alt="" />
+                <img :src="data.img" alt="" />
             </div>
         </div>
         <div

@@ -34,10 +34,10 @@
                                 <div :class="$style['shadow-card']"></div>
                                 <div :class="$style['shadow-card']"></div>
                                 <div :class="$style['main-card']">
-                                    <nuxt-img :src="introTeacherThumb" alt="" />
+                                    <img :src="introTeacherThumb" alt="" />
                                 </div>
                                 <div :class="$style['intro-btn']">
-                                    <nuxt-img
+                                    <img
                                         src="@/assets/images/teacher/btn.png"
                                         alt=""
                                     />
@@ -73,7 +73,7 @@
                                         :class="$style['icon']"
                                         class="flex-shrink-0"
                                     >
-                                        <nuxt-img :src="item.icon" alt="" />
+                                        <img :src="item.icon" alt="" />
                                     </div>
                                     <div
                                         :class="$style['info']"

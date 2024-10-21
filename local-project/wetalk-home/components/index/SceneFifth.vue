@@ -8,15 +8,12 @@
         <div data-index="05" class="layer--scene scene--05">
             <div class="layer--el layer-beijing">
                 <div class="img-beijing">
-                    <nuxt-img
-                        src="@/assets/images/home/05/beijing.jpg"
-                        alt=""
-                    />
+                    <img src="@/assets/images/home/05/beijing.jpg" alt="" />
                 </div>
             </div>
             <div class="layer--el layer-xiaoniao1">
                 <div class="img-xiaoniao1">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.05"
                         src="@/assets/images/home/05/xiaoniao1.png"
@@ -26,7 +23,7 @@
             </div>
             <div class="layer--el layer-xiaoniao2">
                 <div class="img-xiaoniao2">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.05"
                         src="@/assets/images/home/05/xiaoniao2.png"
@@ -36,20 +33,20 @@
             </div>
             <div class="layer--el layer-shu flex justify-center items-center">
                 <div class="img-shu parallax-layer" data-depth="0.1">
-                    <nuxt-img src="@/assets/images/home/05/shu01.png" alt="" />
+                    <img src="@/assets/images/home/05/shu01.png" alt="" />
                     <!--  -->
-                    <nuxt-img src="@/assets/images/home/05/shu02.png" alt="" />
+                    <img src="@/assets/images/home/05/shu02.png" alt="" />
                     <!--  -->
-                    <nuxt-img src="@/assets/images/home/05/shu03.png" alt="" />
+                    <img src="@/assets/images/home/05/shu03.png" alt="" />
                     <!--  -->
-                    <nuxt-img src="@/assets/images/home/05/shu04.png" alt="" />
+                    <img src="@/assets/images/home/05/shu04.png" alt="" />
                     <!--  -->
-                    <nuxt-img src="@/assets/images/home/05/shu05.png" alt="" />
+                    <img src="@/assets/images/home/05/shu05.png" alt="" />
                 </div>
             </div>
             <div class="layer--el layer-wenzi flex items-center justify-center">
                 <div class="img-wenzi">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.25"
                         src="@/assets/images/home/05/wenzi.png"
@@ -59,7 +56,7 @@
             </div>
             <div class="layer--el layer-niao1">
                 <div class="img-niao1">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.2"
                         src="@/assets/images/home/05/niao1.png"
@@ -69,7 +66,7 @@
             </div>
             <div class="layer--el layer-niao2">
                 <div class="img-niao2">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.3"
                         src="@/assets/images/home/05/niao2.png"
@@ -79,7 +76,7 @@
             </div>
             <div class="layer--el layer-dian flex items-center justify-center">
                 <div class="img-dian">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.03"
                         src="@/assets/images/home/05/dian.png"
@@ -89,16 +86,10 @@
             </div>
             <div class="layer--el layer-mask">
                 <div class="img-mask-top">
-                    <nuxt-img
-                        src="@/assets/images/home/05/mask-top.png"
-                        alt=""
-                    />
+                    <img src="@/assets/images/home/05/mask-top.png" alt="" />
                 </div>
                 <div class="img-mask-bottom">
-                    <nuxt-img
-                        src="@/assets/images/home/05/mask-bottom.png"
-                        alt=""
-                    />
+                    <img src="@/assets/images/home/05/mask-bottom.png" alt="" />
                 </div>
             </div>
             <div class="layer--el layer-info flex items-end justify-center">
@@ -112,7 +103,7 @@
                         </div>
                         <div class="img-tansuo" @click="openNews">
                             <div class="box box-text">
-                                <nuxt-img :src="TANSUO_IMG" alt="" />
+                                <img :src="TANSUO_IMG" alt="" />
                             </div>
                             <div class="box box-juanzou">
                                 <div class="tansuo-left"></div>

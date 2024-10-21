@@ -7,27 +7,24 @@
         >
             <div :class="$style['module-body']">
                 <div :class="$style['module-bg']">
-                    <nuxt-img
-                        src="@/assets/images/charity/banner-bg-2.png"
-                        alt=""
-                    />
+                    <img src="@/assets/images/charity/banner-bg-2.png" alt="" />
                 </div>
                 <div class="wrapper--limit-width relative z-10">
                     <div class="wrapper--limit-width-mini">
                         <div :class="$style['module-title']">
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/charity/banner-title-1.png"
                                 alt=""
                             />
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/charity/banner-title-2.png"
                                 alt=""
                             />
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/charity/banner-title-3.png"
                                 alt=""
                             />
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/charity/banner-title-4.png"
                                 alt=""
                             />
@@ -73,7 +70,7 @@
                                 class="wow animate__fadeInUp-30_percent"
                             >
                                 <div :class="$style['item-thumb']">
-                                    <nuxt-img :src="item.thumb" alt="" />
+                                    <img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['item-info']">
                                     <div :class="$style['item-title']">
@@ -119,7 +116,7 @@
                                 class="wow animate__fadeInUp-30_percent"
                             >
                                 <div :class="$style['item-thumb']">
-                                    <nuxt-img :src="item.thumb" alt="" />
+                                    <img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['item-info']">
                                     <div :class="$style['item-title']">
@@ -166,7 +163,7 @@
                                 class="wow animate__fadeInLeft-50"
                             >
                                 <div :class="$style['item-bg']">
-                                    <nuxt-img :src="item.thumb" alt="" />
+                                    <img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['item-info']">
                                     <div :class="$style['item-title']">
@@ -189,7 +186,7 @@
                                 class="wow animate__fadeInRight-50"
                             >
                                 <div :class="$style['item-bg']">
-                                    <nuxt-img :src="item.thumb" alt="" />
+                                    <img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['item-info']">
                                     <div :class="$style['item-title']">

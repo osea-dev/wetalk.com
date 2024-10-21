@@ -32,7 +32,7 @@
                     </div>
                     <div class="state-pos--right wow animate__fadeInRight-50">
                         <div :class="$style['edu-thumb']">
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/sinology/edu.png"
                                 alt=""
                             />

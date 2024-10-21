@@ -43,7 +43,7 @@
                                 class="flex items-center"
                             >
                                 <div :class="$style['student-thumb']">
-                                    <nuxt-img :src="item.thumb" alt="" />
+                                    <img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['student-name']">
                                     <span class="text">{{ item.name }}</span>

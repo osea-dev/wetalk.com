@@ -19,7 +19,7 @@
                                 </div>
                             </div>
                             <div :class="$style['group-icon']">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/about-us/icon.png"
                                     alt=""
                                 />
@@ -102,7 +102,7 @@
                                 <div :class="$style['group-info']"></div>
                             </div>
                             <div :class="$style['group-icon']">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/about-us/icon.png"
                                     alt=""
                                 />
@@ -151,7 +151,7 @@
                                 </div>
                             </div>
                             <div :class="$style['group-icon']">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/about-us/icon.png"
                                     alt=""
                                 />
@@ -191,7 +191,7 @@
                                 </div>
                             </div>
                             <div :class="$style['group-icon']">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/about-us/icon.png"
                                     alt=""
                                 />
@@ -223,7 +223,7 @@
                             </h3>
                             <div :class="$style['group-info']"></div>
                             <div :class="$style['group-icon']">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/about-us/icon.png"
                                     alt=""
                                 />

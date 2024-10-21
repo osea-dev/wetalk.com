@@ -31,7 +31,7 @@
                             :class="$style['img-box']"
                             class="wow animate__fadeInUp-50 animation-delay-3"
                         >
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/chinese/banner.png"
                                 alt=""
                             />
@@ -41,7 +41,7 @@
                                 :class="$style['people-item']"
                                 class="wow animate__fadeInUp-30_percent animation-delay-2"
                             >
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/chinese/banner-p-1.png"
                                     alt=""
                                 />
@@ -50,7 +50,7 @@
                                 :class="$style['people-item']"
                                 class="wow animate__fadeInUp-30_percent animation-delay-3"
                             >
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/chinese/banner-p-2.png"
                                     alt=""
                                 />
@@ -59,7 +59,7 @@
                                 :class="$style['people-item']"
                                 class="wow animate__fadeInUp-30_percent animation-delay-4"
                             >
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/chinese/banner-p-3.png"
                                     alt=""
                                 />
@@ -68,7 +68,7 @@
                                 :class="$style['people-item']"
                                 class="wow animate__fadeInUp-30_percent animation-delay-5"
                             >
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/chinese/banner-p-4.png"
                                     alt=""
                                 />
@@ -158,7 +158,7 @@
                 <div :class="$style['wrapper-inner']" class="relative">
                     <div :class="$style['module-bg']">
                         <div :class="$style['module-bg--inner']">
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/chinese/features-bg-3.png"
                                 alt=""
                             />
@@ -188,7 +188,7 @@
                             >
                                 <div class="state-pos--left">
                                     <div :class="$style['icon-box']">
-                                        <nuxt-img :src="item.icon" alt="" />
+                                        <img :src="item.icon" alt="" />
                                     </div>
                                 </div>
                                 <div class="state-pos--right">
@@ -233,7 +233,7 @@
                     </div>
                     <div :class="$style['module-body']">
                         <div :class="$style['module-bg']">
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/chinese/teacher-map.png"
                                 alt=""
                             />
@@ -317,7 +317,7 @@
                                     <i
                                         class="ic iconfont icon-fill-circle-right"
                                     ></i>
-                                    <nuxt-img :src="item.icon" alt="" />
+                                    <img :src="item.icon" alt="" />
                                 </div>
                                 <div :class="$style['item-info']">
                                     <div :class="$style['item-title']">

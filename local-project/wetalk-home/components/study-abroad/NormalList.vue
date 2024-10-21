@@ -11,7 +11,7 @@
             class="wow animate__fadeInUp-50"
         >
             <div :class="$style['thumb']">
-                <nuxt-img :src="item.thumb" alt="" />
+                <img :src="item.thumb" alt="" />
             </div>
             <div :class="$style['info']">
                 <div :class="$style['title']">

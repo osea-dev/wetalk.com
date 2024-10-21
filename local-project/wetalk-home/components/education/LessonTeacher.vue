@@ -73,7 +73,7 @@
         </div>
         <div class="state-pos--right">
             <div :class="$style['teacher-thumb']">
-                <nuxt-img :src="teacher.thumb" alt="" />
+                <img :src="teacher.thumb" alt="" />
             </div>
         </div>
     </div>

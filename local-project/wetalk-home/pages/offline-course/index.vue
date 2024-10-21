@@ -10,7 +10,7 @@
             >
                 <div :class="$style['banner-left']">
                     <div ref="tree" :class="$style['tree-box']">
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.1"
                             src="@/assets/images/offline-course/banner.png"
@@ -26,7 +26,7 @@
                         :class="$style['slogan-box']"
                         class="wow animate__fadeInRight-50"
                     >
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.3"
                             src="@/assets/images/education/banner-1.png"

@@ -2,7 +2,7 @@ module.exports = {
   apps : [
    {
       name: "wetalk-home-prod",
-      script: "yarn",
+      script: './node_modules/nuxt/bin/nuxt-start',
       args: "start",
       cwd: "./local-project/wetalk-home",
       env: {

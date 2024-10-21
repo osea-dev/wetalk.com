@@ -20,13 +20,13 @@
                                 class="flex flex-col items-center h-full justify-center"
                             >
                                 <div :class="$style['module-title']">
-                                    <nuxt-img
+                                    <img
                                         src="@/assets/images/science/banner-title.png"
                                         alt=""
                                     />
                                 </div>
                                 <div :class="$style['module-subtitle']">
-                                    <nuxt-img
+                                    <img
                                         src="@/assets/images/science/banner-subtitle.png"
                                         alt=""
                                     />
@@ -40,7 +40,7 @@
                                     $style['box-wrapper'],
                                 ]"
                             >
-                                <nuxt-img
+                                <img
                                     class="parallax-layer"
                                     data-depth="0.1"
                                     src="@/assets/images/science/banner-box-4.png"
@@ -53,7 +53,7 @@
                                     $style['box-wrapper'],
                                 ]"
                             >
-                                <nuxt-img
+                                <img
                                     class="parallax-layer"
                                     data-depth="0.1"
                                     src="@/assets/images/science/banner-box-1.png"
@@ -72,13 +72,13 @@
                                         class="parallax-layer"
                                         data-depth="0.18"
                                     >
-                                        <nuxt-img
+                                        <img
                                             src="@/assets/images/science/banner-d-2.png"
                                             alt=""
                                         />
                                     </div>
                                 </div>
-                                <nuxt-img
+                                <img
                                     class="parallax-layer"
                                     data-depth="0.2"
                                     src="@/assets/images/science/banner-box-2.png"
@@ -97,13 +97,13 @@
                                         class="parallax-layer"
                                         data-depth="0.16"
                                     >
-                                        <nuxt-img
+                                        <img
                                             src="@/assets/images/science/banner-d-1.png"
                                             alt=""
                                         />
                                     </div>
                                 </div>
-                                <nuxt-img
+                                <img
                                     class="parallax-layer"
                                     data-depth="0.18"
                                     src="@/assets/images/science/banner-box-3.png"
@@ -117,7 +117,7 @@
                     <div :class="$style['img-box']" class="relative z-20">
                         <div :class="$style['banner-1']">
                             <div :class="$style['banner-d-box']">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/science/banner-1.png"
                                     alt=""
                                 />

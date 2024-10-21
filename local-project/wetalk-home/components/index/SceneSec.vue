@@ -8,7 +8,7 @@
         <div class="layer--scene scene--02">
             <div class="layer--el layer-beijing">
                 <div class="img-beijing">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.02"
                         data-invert-x="false"
@@ -21,27 +21,24 @@
                 class="layer--el layer-taiyang flex justify-center items-start"
             >
                 <div class="img-taiyang">
-                    <nuxt-img
-                        src="@/assets/images/home/02/taiyang.png"
-                        alt=""
-                    />
+                    <img src="@/assets/images/home/02/taiyang.png" alt="" />
                 </div>
             </div>
             <div class="layer--el layer-ren1 flex items-end justify-center">
                 <div class="img-ren1">
-                    <nuxt-img src="@/assets/images/home/02/ren1.png" alt="" />
+                    <img src="@/assets/images/home/02/ren1.png" alt="" />
                 </div>
             </div>
             <div class="layer--el layer-ren2 flex items-end justify-center">
                 <div class="img-ren2">
-                    <nuxt-img src="@/assets/images/home/02/ren2.png" alt="" />
+                    <img src="@/assets/images/home/02/ren2.png" alt="" />
                 </div>
             </div>
             <div
                 class="layer--el layer-chengqiang flex items-end justify-center"
             >
                 <div class="img-chengqiang">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.1"
                         src="@/assets/images/home/02/chengqiang.png"
@@ -51,7 +48,7 @@
             </div>
             <div class="layer--el layer-you">
                 <div class="img-you">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.02"
                         src="@/assets/images/home/02/you.png"
@@ -61,7 +58,7 @@
             </div>
             <div class="layer--el layer-zuo">
                 <div class="img-zuo">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.02"
                         src="@/assets/images/home/02/zuo.png"
@@ -72,7 +69,7 @@
             <div class="layer--el layer-beijing01">
                 <div class="img-beijing01">
                     <div class="img-box flex justify-center items-end">
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.2"
                             src="@/assets/images/home/02/beijing01.png"
@@ -84,7 +81,7 @@
             <div class="layer--el layer-beijing02">
                 <div class="img-beijing02">
                     <div class="img-box flex justify-center items-end">
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.25"
                             src="@/assets/images/home/02/beijing02.png"
@@ -95,7 +92,7 @@
             </div>
             <div class="layer--el layer-wenzi flex items-center justify-center">
                 <div class="img-wenzi">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.2"
                         src="@/assets/images/home/02/wenzi.png"
@@ -113,7 +110,7 @@
                         ></div>
                         <div class="img-tansuo" @click="openNews">
                             <div class="box box-text">
-                                <nuxt-img :src="TANSUO_IMG" alt="" />
+                                <img :src="TANSUO_IMG" alt="" />
                             </div>
                             <div class="box box-juanzou">
                                 <div class="tansuo-left"></div>

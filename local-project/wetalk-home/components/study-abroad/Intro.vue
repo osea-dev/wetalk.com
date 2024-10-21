@@ -20,16 +20,16 @@
         </div>
         <div :class="$style['state-pos-right']" class="relative">
             <div ref="img1" :class="$style['layer-1']">
-                <nuxt-img :src="data.img1" alt="" />
+                <img :src="data.img1" alt="" />
             </div>
             <div ref="img2" :class="$style['layer-2']">
-                <nuxt-img :src="data.img2" alt="" />
+                <img :src="data.img2" alt="" />
             </div>
             <div ref="img3" :class="$style['layer-3']">
-                <nuxt-img :src="data.img3" alt="" />
+                <img :src="data.img3" alt="" />
             </div>
             <div v-if="data.img4" ref="img4" :class="$style['layer-4']">
-                <nuxt-img :src="data.img4" alt="" />
+                <img :src="data.img4" alt="" />
             </div>
             <StudyTag
                 v-if="data.tag"

@@ -22,7 +22,7 @@
                     </div>
                     <div class="state-pos--right">
                         <div :class="$style['module-thumb']">
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/about-us/company-thumb.png"
                                 alt=""
                             />

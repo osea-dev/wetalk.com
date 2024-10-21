@@ -11,10 +11,7 @@
             class="flex justify-between lg:block"
         >
             <div :class="$style['contact-icon']">
-                <nuxt-img
-                    src="@/assets/images/education/contact-icon.png"
-                    alt=""
-                />
+                <img src="@/assets/images/education/contact-icon.png" alt="" />
             </div>
             <div
                 :class="$style['contact-info']"

@@ -3,10 +3,7 @@
         <div class="p-module relative z-10" :class="$style['banner-module']">
             <div :class="$style['banner-left']">
                 <div :class="$style['tree-box']">
-                    <nuxt-img
-                        src="@/assets/images/education/banner-2.png"
-                        alt=""
-                    />
+                    <img src="@/assets/images/education/banner-2.png" alt="" />
                 </div>
             </div>
             <div
@@ -17,7 +14,7 @@
                         :class="$style['slogan-box']"
                         class="wow animate__fadeInRight-50"
                     >
-                        <nuxt-img
+                        <img
                             src="@/assets/images/education/banner-1.png"
                             alt=""
                         />

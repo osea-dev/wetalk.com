@@ -44,7 +44,7 @@
                                 class="swiper-slide wow animate__fadeInRight-10_percent"
                                 :class="$style['course-item']"
                             >
-                                <nuxt-img :src="item.thumb" alt="" />
+                                <img :src="item.thumb" alt="" />
                                 <div :class="$style['course-info']">
                                     <div :class="$style['course-title']">
                                         {{ $t(item.title) }}

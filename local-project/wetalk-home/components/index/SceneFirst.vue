@@ -3,7 +3,7 @@
         <div class="layer--scene scene--01">
             <div class="layer--el layer-beijing">
                 <div class="img-beijing">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.02"
                         src="@/assets/images/home/01/beijing.jpg"
@@ -14,10 +14,7 @@
             <div class="layer--el layer-taiyang">
                 <div class="box-sky">
                     <div class="img-taiyang">
-                        <nuxt-img
-                            src="@/assets/images/home/01/taiyang.png"
-                            alt=""
-                        />
+                        <img src="@/assets/images/home/01/taiyang.png" alt="" />
                     </div>
                     <div class="img-yu-1"></div>
                     <div class="img-yu-2"></div>
@@ -30,7 +27,7 @@
                     <div class="img-yu-1"></div>
                     <div class="img-yu-2"></div>
                     <div class="img-niao">
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.04"
                             src="@/assets/images/home/01/niao.png"
@@ -41,7 +38,7 @@
             </div>
             <div class="layer--el layer-shan">
                 <div class="img-shan">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.1"
                         src="@/assets/images/home/01/shan.png"
@@ -52,7 +49,7 @@
             <div class="layer--el layer-shu">
                 <div class="img-shu">
                     <div class="img-box flex justify-start items-start">
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.15"
                             src="@/assets/images/home/01/shu.png"
@@ -63,7 +60,7 @@
             </div>
             <div class="layer--el layer-ren">
                 <div class="img-ren">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.2"
                         src="@/assets/images/home/01/ren.png"
@@ -73,7 +70,7 @@
             </div>
             <div class="layer--el layer-hailang">
                 <div class="img-hailang">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.3"
                         src="@/assets/images/home/01/hailang.png"
@@ -81,7 +78,7 @@
                     />
                 </div>
                 <div class="img-hailang">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.4"
                         src="@/assets/images/home/01/hailang.png"
@@ -91,7 +88,7 @@
             </div>
             <div class="layer--el layer-wenzi flex items-center justify-center">
                 <div class="img-wenzi">
-                    <nuxt-img
+                    <img
                         class="parallax-layer"
                         data-depth="0.1"
                         src="@/assets/images/home/01/wenzi.png"
@@ -103,7 +100,7 @@
                 <div class="box-sky">
                     <div class="img-taiyang"></div>
                     <div class="img-yu-1">
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.08"
                             src="@/assets/images/home/01/001.png"
@@ -119,7 +116,7 @@
                     <div class="img-taiyang"></div>
                     <div class="img-yu-1"></div>
                     <div class="img-yu-2">
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.35"
                             src="@/assets/images/home/01/002.png"
@@ -139,7 +136,7 @@
                         ></div>
                         <div class="img-tansuo" @click="openNews">
                             <div class="box box-text">
-                                <nuxt-img :src="TANSUO_IMG" alt="" />
+                                <img :src="TANSUO_IMG" alt="" />
                             </div>
                             <div class="box box-juanzou">
                                 <div class="tansuo-left"></div>

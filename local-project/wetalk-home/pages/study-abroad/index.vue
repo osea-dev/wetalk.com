@@ -7,7 +7,7 @@
     <main ref="Dom" class="w-body w-module" :class="$style['study-abroad']">
         <OrbCanvas :color="['#54EDB6']" />
         <div :class="$style['page-banner']" class="relative z-10">
-            <nuxt-img
+            <img
                 class="w-full absolute top-0 left-0 ring-0 mx-auto"
                 src="@/assets/images/study-abroad/banner.png"
                 alt=""
@@ -79,10 +79,7 @@
                                             class="wow animate__fadeInUp-50_percent"
                                         >
                                             <div :class="$style['item-bg']">
-                                                <nuxt-img
-                                                    :src="item.bg"
-                                                    alt=""
-                                                />
+                                                <img :src="item.bg" alt="" />
                                             </div>
                                             <div class="relative z-10">
                                                 <div
@@ -162,7 +159,7 @@
                                         ]"
                                         class="wow animate__fadeInRight-30"
                                     >
-                                        <nuxt-img
+                                        <img
                                             class="w-full"
                                             src="@/assets/images/study-abroad/group-2.png"
                                             alt=""
@@ -199,7 +196,7 @@
                                                 <i
                                                     class="ic iconfont flex justify-center items-center flex-shrink-0"
                                                 >
-                                                    <nuxt-img
+                                                    <img
                                                         style="width: 32.5%"
                                                         src="@/assets/images/study-abroad/right.png"
                                                         alt=""
@@ -268,10 +265,7 @@
                                             :class="[$style['card']]"
                                         >
                                             <div :class="$style['icon']">
-                                                <nuxt-img
-                                                    :src="item.icon"
-                                                    alt=""
-                                                />
+                                                <img :src="item.icon" alt="" />
                                             </div>
                                             <div :class="$style['title']">
                                                 {{ item.title }}
@@ -313,7 +307,7 @@
                                             <div
                                                 :class="$style['ad-card-img-1']"
                                             >
-                                                <nuxt-img
+                                                <img
                                                     class="parallax-layer"
                                                     data-depth="-0.3"
                                                     src="@/assets/images/study-abroad/ad-card-1.png"
@@ -324,7 +318,7 @@
                                                 :class="$style['ad-card-img-2']"
                                                 class="wow animate__fadeInRight-50"
                                             >
-                                                <nuxt-img
+                                                <img
                                                     src="@/assets/images/study-abroad/ad-card-2.png"
                                                     alt=""
                                                 />
@@ -336,7 +330,7 @@
                                                     class="parallax-layer"
                                                     data-depth="0.2"
                                                 >
-                                                    <nuxt-img
+                                                    <img
                                                         src="@/assets/images/study-abroad/ad-card-3.png"
                                                         alt=""
                                                     />

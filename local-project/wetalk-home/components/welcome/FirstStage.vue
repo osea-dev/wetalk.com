@@ -70,7 +70,7 @@
         <div class="w-stage-cover">
             <div class="header flex items-center justify-center">
                 <Link class="w-logo" :to="linkManage.index">
-                    <nuxt-img src="@/assets/images/logo.png" alt="" />
+                    <img src="@/assets/images/logo.png" alt="" />
                 </Link>
             </div>
             <div class="body flex items-center justify-center h-full">

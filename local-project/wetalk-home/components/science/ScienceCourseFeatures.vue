@@ -47,19 +47,19 @@
                             class="flex-shrink-0 wow-group-3"
                         >
                             <div :class="$style['img-box']">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/science/card-1.png"
                                     alt=""
                                 />
                             </div>
                             <div :class="$style['img-box']">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/science/card-2.png"
                                     alt=""
                                 />
                             </div>
                             <div :class="$style['img-box']">
-                                <nuxt-img
+                                <img
                                     src="@/assets/images/science/card-3.png"
                                     alt=""
                                 />

@@ -39,13 +39,13 @@
                     </div>
                     <div :class="$style['teacher-thumb-list']" class="flex">
                         <div :class="$style['teacher-thumb']">
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/sinology/teacher-2.png"
                                 alt=""
                             />
                         </div>
                         <div :class="$style['teacher-thumb']">
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/sinology/teacher-1.png"
                                 alt=""
                             />

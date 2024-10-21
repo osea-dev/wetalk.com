@@ -16,7 +16,7 @@
                         :class="$style['picture-box']"
                         class="wow animate__fadeInUp-50"
                     >
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.2"
                             src="@/assets/images/online-live-course/banner-3.png"
@@ -32,7 +32,7 @@
                         :class="$style['cloud-box']"
                         class="wow animate__fadeInRight-50"
                     >
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.1"
                             src="@/assets/images/online-live-course/banner-2.png"
@@ -43,7 +43,7 @@
                         :class="$style['slogan-box']"
                         class="wow animate__fadeInRight-50"
                     >
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.3"
                             src="@/assets/images/education/banner-1.png"

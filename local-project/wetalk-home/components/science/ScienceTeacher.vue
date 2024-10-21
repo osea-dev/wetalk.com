@@ -33,7 +33,7 @@
                         class="flex items-end"
                     >
                         <div :class="$style['teacher-thumb']">
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/science/teacher-1.png"
                                 alt=""
                             />

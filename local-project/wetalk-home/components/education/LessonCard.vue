@@ -12,7 +12,7 @@
                             class="swiper-slide"
                             :class="$style['lesson-thumb']"
                         >
-                            <nuxt-img :src="intro.img" alt="" />
+                            <img :src="intro.img" alt="" />
                         </div>
                     </div>
                 </div>

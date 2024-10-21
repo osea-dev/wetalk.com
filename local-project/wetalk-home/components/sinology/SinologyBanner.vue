@@ -127,7 +127,7 @@
                     class="flex items-end justify-center"
                 >
                     <div :class="$style['banner-text']">
-                        <nuxt-img
+                        <img
                             src="@/assets/images/sinology/banner-text.png"
                             alt=""
                         />
@@ -159,7 +159,7 @@
                 <div :class="$style['module-info']" class="flex md:block">
                     <div class="state-pos--left">
                         <div :class="$style['slogan-box']">
-                            <nuxt-img
+                            <img
                                 src="@/assets/images/sinology/sinology-banner-1.png"
                                 alt=""
                             />

@@ -15,7 +15,7 @@
                                 class="wow animate__fadeInUp-50 lg:grid lg:grid-cols-2 sm:block"
                             >
                                 <div :class="$style['item-thumb']">
-                                    <nuxt-img :src="item.thumb" alt="" />
+                                    <img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['item-intro']">
                                     <div :class="$style['item-title']">

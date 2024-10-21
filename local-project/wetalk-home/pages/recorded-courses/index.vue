@@ -10,7 +10,7 @@
             >
                 <div :class="$style['banner-left']">
                     <div ref="birder1" :class="$style['birder-1']">
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.1"
                             src="@/assets/images/record-course/banner-1.png"
@@ -18,7 +18,7 @@
                         />
                     </div>
                     <div ref="birder2" :class="$style['birder-2']">
-                        <nuxt-img
+                        <img
                             class="parallax-layer"
                             data-depth="0.2"
                             src="@/assets/images/record-course/banner-2.png"
@@ -31,7 +31,7 @@
                         :class="$style['slogan-box']"
                         class="wow animate__fadeInRight-50"
                     >
-                        <nuxt-img
+                        <img
                             src="@/assets/images/education/banner-1.png"
                             alt=""
                         />

@@ -21,7 +21,7 @@
                     target="_blank"
                     :class="$style['user-avatar']"
                 >
-                    <nuxt-img :src="userAvatar" alt="" />
+                    <img :src="userAvatar" alt="" />
                 </Link>
                 <div v-else></div>
                 <div

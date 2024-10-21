@@ -40,7 +40,7 @@
                         >
                             <div :class="$style['item-thumb']">
                                 <div :class="$style['img-box']">
-                                    <nuxt-img :src="item.img" alt="" />
+                                    <img :src="item.img" alt="" />
                                 </div>
                             </div>
                             <div

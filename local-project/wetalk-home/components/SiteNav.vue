@@ -15,7 +15,7 @@
                         class="flex items-center justify-center"
                     >
                         <h1 class="hide">wetalk</h1>
-                        <nuxt-img
+                        <img
                             class="hide"
                             src="@/assets/images/logo.png"
                             alt=""
@@ -78,7 +78,7 @@
                     </template>
                     <div v-else :class="$style['user-avatar']">
                         <div :class="$style['user-avatar-image']">
-                            <nuxt-img :src="userAvatar" alt="" />
+                            <img :src="userAvatar" alt="" />
                         </div>
                         <div :class="$style['user-oper-panel']">
                             <Link
