@@ -8,7 +8,7 @@
     "scripts": {
         "lerna": "lerna",
         "dev:start": "lerna run dev --parallel",
-        "dev": "cross-env API_BASE_URL=http://159.138.28.189:5001/ lerna run dev --parallel",
+        "dev": "cross-env API_BASE_URL=http://localhost:5001/ lerna run dev --parallel",
         "start": "cross-env API_BASE_URL=http://159.138.28.189:5001/ lerna run start --parallel",
 	"serve:prod": "lerna exec --scope local-project/* --ignore local-project/wetalk-assets -- yarn nuxt start",
         "build": "cross-env lerna run build --parallel"

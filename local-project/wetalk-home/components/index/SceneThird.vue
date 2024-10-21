@@ -8,12 +8,15 @@
         <div class="layer--scene scene--03">
             <div class="layer--el layer-beijing">
                 <div class="img-beijing">
-                    <img src="@/assets/images/home/03/beijing.jpg" alt="" />
+                    <nuxt-img
+                        src="@/assets/images/home/03/beijing.jpg"
+                        alt=""
+                    />
                 </div>
             </div>
             <div class="layer--el layer-yuan flex justify-center items-center">
                 <div class="img-yuan">
-                    <img
+                    <nuxt-img
                         class="parallax-layer"
                         data-depth="0.02"
                         src="@/assets/images/home/03/yuan.png"
@@ -23,7 +26,7 @@
             </div>
             <div class="layer--el layer-taiji flex justify-center items-center">
                 <div class="img-taiji">
-                    <img
+                    <nuxt-img
                         class="parallax-layer"
                         data-depth="0.06"
                         src="@/assets/images/home/03/taiji.png"
@@ -33,12 +36,12 @@
             </div>
             <div class="layer--el layer-mask flex justify-center items-center">
                 <div class="img-mask">
-                    <img src="@/assets/images/home/03/mask.png" alt="" />
+                    <nuxt-img src="@/assets/images/home/03/mask.png" alt="" />
                 </div>
             </div>
             <div class="layer--el layer-yu">
                 <div class="img-yu">
-                    <img
+                    <nuxt-img
                         class="parallax-layer"
                         data-depth="0.35"
                         src="@/assets/images/home/03/yu.png"
@@ -48,7 +51,7 @@
             </div>
             <div class="layer--el layer-niao">
                 <div class="img-niao">
-                    <img
+                    <nuxt-img
                         class="parallax-layer"
                         data-depth="0.3"
                         src="@/assets/images/home/03/niao.png"
@@ -59,7 +62,7 @@
             <div class="layer--el layer-beijing01">
                 <div class="img-beijing01">
                     <div class="img-box flex justify-center items-end">
-                        <img
+                        <nuxt-img
                             class="parallax-layer"
                             data-depth="0.2"
                             src="@/assets/images/home/03/beijing01.png"
@@ -70,7 +73,7 @@
             </div>
             <div class="layer--el layer-guang">
                 <div class="img-guang">
-                    <img
+                    <nuxt-img
                         class="parallax-layer"
                         data-depth="0.3"
                         src="@/assets/images/home/03/guang.png"
@@ -80,7 +83,7 @@
             </div>
             <div class="layer--el layer-guang2">
                 <div class="img-guang2">
-                    <img
+                    <nuxt-img
                         class="parallax-layer"
                         data-depth="0.2"
                         src="@/assets/images/home/03/guang2.png"
@@ -90,7 +93,7 @@
             </div>
             <div class="layer--el layer-wenzi flex items-center justify-center">
                 <div class="img-wenzi">
-                    <img
+                    <nuxt-img
                         class="parallax-layer"
                         data-depth="0.1"
                         src="@/assets/images/home/03/wenzi.png"
@@ -108,7 +111,7 @@
                         ></div>
                         <div class="img-tansuo" @click="openNews">
                             <div class="box box-text">
-                                <img :src="TANSUO_IMG" alt="" />
+                                <nuxt-img :src="TANSUO_IMG" alt="" />
                             </div>
                             <div class="box box-juanzou">
                                 <div class="tansuo-left"></div>

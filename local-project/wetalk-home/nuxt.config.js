@@ -5,7 +5,7 @@ const ENV = {
     // DOMAIN: "http://localhost:5001",
     //DOMAIN: "https://www.wetalk.com",
     // DOMAIN: "http://0.0.0.0",
-    DOMAIN: "http://159.138.49.136/"
+    DOMAIN: "http://159.138.49.136/",
 };
 
 export default {
@@ -118,6 +118,7 @@ export default {
         // https://go.nuxtjs.dev/axios
         "@nuxtjs/axios",
         "@nuxtjs/i18n",
+        "@nuxt/image",
     ],
 
     i18n: {
