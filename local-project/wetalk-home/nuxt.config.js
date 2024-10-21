@@ -3,8 +3,9 @@ import { defaultGetLocalIdent } from "./css-loader";
 
 const ENV = {
     // DOMAIN: "http://localhost:5001",
-    DOMAIN: "https://www.wetalk.com",
+    //DOMAIN: "https://www.wetalk.com",
     // DOMAIN: "http://0.0.0.0",
+    DOMAIN: "http://159.138.49.136/"
 };
 
 export default {
