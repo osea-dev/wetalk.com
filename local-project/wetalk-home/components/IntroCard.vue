@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                             <div :class="$style['item-icon']">
-                                <img :src="item.icon" alt="" />
+                                <nuxt-img :src="item.icon" alt="" />
                             </div>
                         </div>
                     </div>

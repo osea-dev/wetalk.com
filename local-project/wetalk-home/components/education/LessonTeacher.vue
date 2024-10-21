@@ -15,12 +15,12 @@
                 </div>
                 <div :class="$style['teacher-tag']" class="flex items-center">
                     <template v-for="(item, index) in teacher.tag">
-                        <div :class="$style['tag-item']" :key="index">
+                        <div :key="index" :class="$style['tag-item']">
                             <span class="text">{{ item }}</span>
                             <i
+                                v-if="index != teacher.tag.length - 1"
                                 :class="$style['divide-line']"
                                 class="ic"
-                                v-if="index != teacher.tag.length - 1"
                             ></i>
                         </div>
                     </template>
@@ -52,13 +52,13 @@
                                 advantage.value
                             }}</span>
                             <sup
-                                :class="$style['item-sup']"
                                 v-if="advantage.sup"
+                                :class="$style['item-sup']"
                                 >{{ advantage.sup }}</sup
                             >
                             <sub
-                                :class="$style['item-sub']"
                                 v-if="advantage.sub"
+                                :class="$style['item-sub']"
                                 >{{ advantage.sub }}</sub
                             >
                         </div>
@@ -73,7 +73,7 @@
         </div>
         <div class="state-pos--right">
             <div :class="$style['teacher-thumb']">
-                <img :src="teacher.thumb" alt="" />
+                <nuxt-img :src="teacher.thumb" alt="" />
             </div>
         </div>
     </div>

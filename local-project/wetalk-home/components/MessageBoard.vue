@@ -15,7 +15,7 @@
                         $t("KEY_MODULE_MESSAGE.TITLE")
                     }}</span>
                     <i class="ic">
-                        <img
+                        <nuxt-img
                             src="@/assets/images/site/icon-vector.png"
                             alt=""
                         />
@@ -56,7 +56,10 @@
                     :class="$style['avatar-list']"
                     class="wow animate__fadeInUp-50"
                 >
-                    <img src="@/assets/images/site/message-avatar.png" alt="" />
+                    <nuxt-img
+                        src="@/assets/images/site/message-avatar.png"
+                        alt=""
+                    />
                 </div>
             </div>
             <div class="state-pos--right wow animate__fadeIn">

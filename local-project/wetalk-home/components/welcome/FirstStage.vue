@@ -70,7 +70,7 @@
         <div class="w-stage-cover">
             <div class="header flex items-center justify-center">
                 <Link class="w-logo" :to="linkManage.index">
-                    <img src="@/assets/images/logo.png" alt="" />
+                    <nuxt-img src="@/assets/images/logo.png" alt="" />
                 </Link>
             </div>
             <div class="body flex items-center justify-center h-full">
@@ -123,8 +123,8 @@
                     >
                         <button
                             id="playBtn"
-                            @click="playLevelAnimate"
                             class="btn--entry flex text-base items-center"
+                            @click="playLevelAnimate"
                         >
                             <div
                                 class="flex text-wrapper"

@@ -8,8 +8,8 @@
                     :desc="$t('KEY_PAGE_SCIENCE.COURSE.DESC')"
                 />
                 <div
-                    :class="$style['module-body']"
                     ref="moduleBody"
+                    :class="$style['module-body']"
                     class="relative"
                 >
                     <div
@@ -30,8 +30,8 @@
                         </div>
                     </div>
                     <div
-                        class="swiper"
                         ref="courseSwiper"
+                        class="swiper"
                         :class="$style['course-swiper']"
                     >
                         <div
@@ -39,12 +39,12 @@
                             :class="$style['course-list']"
                         >
                             <div
-                                class="swiper-slide wow animate__fadeInRight-10_percent"
-                                :class="$style['course-item']"
                                 v-for="(item, index) in courseList"
                                 :key="index"
+                                class="swiper-slide wow animate__fadeInRight-10_percent"
+                                :class="$style['course-item']"
                             >
-                                <img :src="item.thumb" alt="" />
+                                <nuxt-img :src="item.thumb" alt="" />
                                 <div :class="$style['course-info']">
                                     <div :class="$style['course-title']">
                                         {{ $t(item.title) }}
@@ -58,10 +58,10 @@
                     </div>
                     <div :class="$style['curse-category']" class="wow-group-5">
                         <div
-                            :class="$style['category-list']"
-                            class="flex items-start wow animate__fadeInUp-50"
                             v-for="(cat, index) in courseCat"
                             :key="index"
+                            :class="$style['category-list']"
+                            class="flex items-start wow animate__fadeInUp-50"
                         >
                             <i class="ic iconfont icon-circle-right-strock"></i>
                             <div :class="$style['item-body']">

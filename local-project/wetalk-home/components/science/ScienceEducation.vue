@@ -27,7 +27,7 @@
                             {{ $t("KEY_PAGE_SCIENCE.EDUCATION.DESC[1]") }}
                         </p>
                         <div :class="$style['module-bg']">
-                            <img
+                            <nuxt-img
                                 src="@/assets/images/science/edu-bg.png"
                                 alt=""
                             />
@@ -49,13 +49,13 @@
                             class="grid grid-cols-3 wow animate__flipInX lg:grid-cols-1 lg:w-full"
                         >
                             <div
-                                :class="$style['intro-item']"
                                 v-for="(item, index) in introList"
                                 :key="index"
+                                :class="$style['intro-item']"
                                 class="flex"
                             >
                                 <div :class="$style['intro-thumb']">
-                                    <img :src="item.icon" alt="" />
+                                    <nuxt-img :src="item.icon" alt="" />
                                 </div>
                                 <div :class="$style['intro-info']">
                                     <div :class="$style['intro-title']">

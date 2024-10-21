@@ -32,7 +32,7 @@
                         )
                     "
                 >
-                    <img src="@/assets/images/about-us/video.jpg" alt="" />
+                    <nuxt-img src="@/assets/images/about-us/video.jpg" alt="" />
                     <div
                         :class="$style['item-cover']"
                         class="flex justify-center items-center"

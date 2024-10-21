@@ -13,7 +13,7 @@
                 :class="$style['video-thumb']"
                 @click="playVideo(item.shortVideoid)"
             >
-                <img :src="item.img" alt="" />
+                <nuxt-img :src="item.img" alt="" />
                 <div :class="$style['video-tags']" class="flex items-end">
                     <div :class="$style['tags-list']" class="flex flex-wrap">
                         <div

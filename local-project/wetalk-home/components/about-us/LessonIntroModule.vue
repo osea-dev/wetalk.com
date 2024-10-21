@@ -9,13 +9,13 @@
                             class="grid grid-cols-3 gap-10 wow wow-group-3 xxl:gap-7 xl:gap-5 lg:grid-cols-1"
                         >
                             <div
-                                :class="$style['card-item']"
-                                class="wow animate__fadeInUp-50 lg:grid lg:grid-cols-2 sm:block"
                                 v-for="(item, index) in introCardList"
                                 :key="index"
+                                :class="$style['card-item']"
+                                class="wow animate__fadeInUp-50 lg:grid lg:grid-cols-2 sm:block"
                             >
                                 <div :class="$style['item-thumb']">
-                                    <img :src="item.thumb" alt="" />
+                                    <nuxt-img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['item-intro']">
                                     <div :class="$style['item-title']">

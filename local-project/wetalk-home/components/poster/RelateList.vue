@@ -6,13 +6,13 @@
         <template v-for="item in list">
             <Link
                 v-if="!item.video"
+                :key="item.newsid"
                 :class="$style['list-item']"
                 class="wow animate__fadeInUp-100 md:grid md:grid-cols-2 sm:grid-cols-1"
-                :key="item.newsid"
                 :to="item.url || linkManage.news + '/' + item.newsid"
             >
                 <div :class="$style['item-thumb']">
-                    <img :src="item.img" alt="" />
+                    <nuxt-img :src="item.img" alt="" />
                 </div>
                 <div :class="$style['item-info']">
                     <div :class="$style['item-title']">
@@ -39,7 +39,7 @@
                 @click="playVideo(item.video)"
             >
                 <div :class="$style['item-thumb']">
-                    <img :src="item.img" alt="" />
+                    <nuxt-img :src="item.img" alt="" />
                     <div
                         :class="$style['item-cover']"
                         class="flex justify-center items-center"

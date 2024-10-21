@@ -3,8 +3,8 @@
         <div class="state-pos--left relative z-10">
             <div :class="$style['swiper-box']">
                 <div
-                    class="swiper relative"
                     ref="swiper"
+                    class="swiper relative"
                     :class="$style['lesson-swiper']"
                 >
                     <div class="swiper-wrapper">
@@ -12,7 +12,7 @@
                             class="swiper-slide"
                             :class="$style['lesson-thumb']"
                         >
-                            <img :src="intro.img" alt="" />
+                            <nuxt-img :src="intro.img" alt="" />
                         </div>
                     </div>
                 </div>

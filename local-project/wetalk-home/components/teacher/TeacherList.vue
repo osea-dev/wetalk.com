@@ -12,12 +12,12 @@
                     <div :class="$style['teacher-category']">
                         <div class="flex">
                             <span
-                                :class="$style['category-item']"
                                 v-for="(item, index) in categoryList"
+                                :key="index"
+                                :class="$style['category-item']"
                                 :data-active="
                                     currentCat === item.teacherCategoryid
                                 "
-                                :key="index"
                                 :data-id="item.teacherCategoryid"
                                 @click="currentCat = item.teacherCategoryid"
                             >
@@ -40,7 +40,7 @@
                         >
                             <div :class="$style['item-thumb']">
                                 <div :class="$style['img-box']">
-                                    <img :src="item.img" alt="" />
+                                    <nuxt-img :src="item.img" alt="" />
                                 </div>
                             </div>
                             <div

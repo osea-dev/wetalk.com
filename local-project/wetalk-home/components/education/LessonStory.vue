@@ -4,7 +4,7 @@
  * @LastEditTime: 2022-09-26 18:27:41
 -->
 <template>
-    <div :class="$style['lesson-story']" ref="Dom">
+    <div ref="Dom" :class="$style['lesson-story']">
         <div :class="$style['swiper-box']">
             <div
                 :class="$style['swiper-controller']"
@@ -32,10 +32,10 @@
                     :class="$style['story-swiper-wrapper']"
                 >
                     <div
-                        class="swiper-slide"
-                        :class="$style['story-swiper-slide']"
                         v-for="(item, index) in story.list"
                         :key="index"
+                        class="swiper-slide"
+                        :class="$style['story-swiper-slide']"
                     >
                         <div :class="$style['story-card']">
                             <div
@@ -43,7 +43,7 @@
                                 class="flex items-center"
                             >
                                 <div :class="$style['student-thumb']">
-                                    <img :src="item.thumb" alt="" />
+                                    <nuxt-img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['student-name']">
                                     <span class="text">{{ item.name }}</span>
@@ -54,9 +54,9 @@
                             </div>
                             <div :class="$style['item-footer']" class="flex">
                                 <i
-                                    class="ic iconfont icon-start"
                                     v-for="(_start, i) in item.score"
                                     :key="i"
+                                    class="ic iconfont icon-start"
                                 ></i>
                             </div>
                         </div>

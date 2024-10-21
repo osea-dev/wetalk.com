@@ -16,10 +16,10 @@
                             class="wow animate__fadeInRight-50"
                         >
                             <div
-                                :class="$style['info-item']"
-                                class="flex items-center"
                                 v-for="(item, index) in infoList"
                                 :key="index"
+                                :class="$style['info-item']"
+                                class="flex items-center"
                             >
                                 <i
                                     class="ic iconfont icon-circle-right-strock flex items-center justify-center"
@@ -33,7 +33,7 @@
                         class="flex items-end"
                     >
                         <div :class="$style['teacher-thumb']">
-                            <img
+                            <nuxt-img
                                 src="@/assets/images/science/teacher-1.png"
                                 alt=""
                             />

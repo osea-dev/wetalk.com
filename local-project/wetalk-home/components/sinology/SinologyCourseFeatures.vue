@@ -17,10 +17,10 @@
                     />
                     <div :class="$style['intro-list']" class="wow-group-3">
                         <div
-                            :class="$style['intro-item']"
-                            class="flex items-center wow animate__fadeInUp-50"
                             v-for="(item, index) in introList"
                             :key="index"
+                            :class="$style['intro-item']"
+                            class="flex items-center wow animate__fadeInUp-50"
                         >
                             <i class="ic iconfont icon-fill-circle-right"></i>
                             <span class="text">{{ $t(item) }}</span>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="state-pos--right wow animate__fadeInRight-50">
                     <div :class="$style['thumb-box']">
-                        <img
+                        <nuxt-img
                             src="@/assets/images/sinology/course-feature.png"
                             alt=""
                         />

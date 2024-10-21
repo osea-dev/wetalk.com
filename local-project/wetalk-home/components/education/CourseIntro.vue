@@ -20,19 +20,19 @@
                     class="flex animate__fadeInUp-50 wow"
                 >
                     <button
-                        :class="$style['category-item']"
                         v-for="(item, index) in category"
-                        class="flex items-center justify-center"
                         :key="index"
+                        :class="$style['category-item']"
+                        class="flex items-center justify-center"
                         :data-active="currentCategory === item.value"
                         @click="tabCategory(index)"
                     >
                         <span class="text">{{ item.title }}</span>
                     </button>
                     <div
+                        ref="categoryShadow"
                         :class="$style['category-shadow']"
                         :style="{ width: (1 / category.length) * 100 + '%' }"
-                        ref="categoryShadow"
                     >
                         <div :class="$style['icon']"></div>
                     </div>
@@ -41,16 +41,16 @@
                     <template v-for="group in course.groups">
                         <template v-for="item in group.groupInfos">
                             <div
-                                :class="$style['list-item']"
-                                class="flex items-center animate__fadeInUp-50 wow"
                                 v-if="group.courseGroupid === currentCategory"
                                 :key="item.courseGroupInfoid"
+                                :class="$style['list-item']"
+                                class="flex items-center animate__fadeInUp-50 wow"
                             >
                                 <div
-                                    :class="$style['item-thumb']"
                                     :key="item.courseGroupInfoid"
+                                    :class="$style['item-thumb']"
                                 >
-                                    <img :src="item.img" alt="" />
+                                    <nuxt-img :src="item.img" alt="" />
                                     <div :class="$style['level-icon']">
                                         <span class="text">{{
                                             item.level
@@ -58,9 +58,9 @@
                                     </div>
                                 </div>
                                 <div
+                                    :key="item.courseGroupInfoid + 'info'"
                                     :class="$style['item-info']"
                                     class="min-w-0"
-                                    :key="item.courseGroupInfoid + 'info'"
                                 >
                                     <div :class="$style['item-title']">
                                         {{ item.title }}

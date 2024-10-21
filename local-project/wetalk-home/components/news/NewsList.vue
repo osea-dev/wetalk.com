@@ -12,7 +12,7 @@
                 :to="item.url || linkManage.news + '/' + item.newsid"
             >
                 <div :class="$style['item-thumb']">
-                    <img :src="item.img" alt="" />
+                    <nuxt-img :src="item.img" alt="" />
                 </div>
                 <div :class="$style['item-info']">
                     <div :class="$style['item-title']">
@@ -39,7 +39,7 @@
                 @click="playVideo(item.video)"
             >
                 <div :class="$style['item-thumb']">
-                    <img :src="item.img" alt="" />
+                    <nuxt-img :src="item.img" alt="" />
                     <div
                         :class="$style['item-cover']"
                         class="flex justify-center items-center"

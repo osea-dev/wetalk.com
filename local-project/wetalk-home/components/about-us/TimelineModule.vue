@@ -16,7 +16,7 @@
                                 }}
                             </div>
                             <div :class="$style['time-thumb']">
-                                <img
+                                <nuxt-img
                                     src="@/assets/images/about-us/time-0.png"
                                     alt=""
                                 />
@@ -50,31 +50,31 @@
                                     }}
                                 </p>
                                 <div
-                                    :class="$style['intro-swiper']"
                                     ref="swiperBody"
+                                    :class="$style['intro-swiper']"
                                 >
                                     <div
+                                        ref="timeSwiper"
                                         class="swiper"
                                         :class="$style['time-swiper']"
-                                        ref="timeSwiper"
                                     >
                                         <div class="swiper-wrapper wow-group-4">
                                             <div
-                                                class="swiper-slide wow animate__fadeInRight-30_percent"
-                                                :class="$style['img-box']"
                                                 v-for="(
                                                     item, index
                                                 ) in historySwiper"
                                                 :key="index"
+                                                class="swiper-slide wow animate__fadeInRight-30_percent"
+                                                :class="$style['img-box']"
                                             >
-                                                <img :src="item" alt="" />
+                                                <nuxt-img :src="item" alt="" />
                                             </div>
                                         </div>
                                     </div>
                                     <div
+                                        ref="swiperControl"
                                         class="flex justify-between items-center"
                                         :class="$style['swiper-controller']"
-                                        ref="swiperControl"
                                     >
                                         <div :class="$style['btn--to-left']">
                                             <i
@@ -112,31 +112,31 @@
                                 }}
                             </p>
                             <div
-                                :class="$style['intro-swiper']"
                                 ref="swiperBody"
+                                :class="$style['intro-swiper']"
                             >
                                 <div
+                                    ref="timeSwiper"
                                     class="swiper"
                                     :class="$style['time-swiper']"
-                                    ref="timeSwiper"
                                 >
                                     <div class="swiper-wrapper wow-group-4">
                                         <div
-                                            class="swiper-slide wow animate__fadeInRight-30_percent"
-                                            :class="$style['img-box']"
                                             v-for="(
                                                 item, index
                                             ) in historySwiper"
                                             :key="index"
+                                            class="swiper-slide wow animate__fadeInRight-30_percent"
+                                            :class="$style['img-box']"
                                         >
-                                            <img :src="item" alt="" />
+                                            <nuxt-img :src="item" alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div
+                                    ref="swiperControl"
                                     class="flex justify-between items-center"
                                     :class="$style['swiper-controller']"
-                                    ref="swiperControl"
                                 >
                                     <div :class="$style['btn--to-left']">
                                         <i
@@ -163,7 +163,7 @@
                                 }}
                             </div>
                             <div :class="$style['time-thumb']">
-                                <img
+                                <nuxt-img
                                     src="@/assets/images/about-us/time-1.png"
                                     alt=""
                                 />

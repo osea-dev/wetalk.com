@@ -2,8 +2,8 @@
     <div ref="Dom" :class="$style['level-intro-module']">
         <div class="wrapper--limit-width">
             <div
-                :class="$style['module-body']"
                 ref="swiperBody"
+                :class="$style['module-body']"
                 :style="{ backgroundColor: levelIntroList[0].theme }"
             >
                 <div
@@ -15,9 +15,9 @@
                         :class="$style['level-intro-list']"
                     >
                         <div
-                            :class="$style['level-intro-item']"
                             v-for="(item, index) in levelIntroList"
                             :key="index"
+                            :class="$style['level-intro-item']"
                             :data-theme="item.theme"
                             class="flex justify-between items-center swiper-slide md:flex-col-reverse"
                         >
@@ -44,19 +44,19 @@
                             </div>
                             <div :class="$style['item-images-box']">
                                 <div :class="$style['item-imgs']">
-                                    <img
+                                    <nuxt-img
                                         class="relative"
                                         :class="$style['item-thumb']"
                                         :src="item.thumb"
                                         alt=""
                                     />
-                                    <img
+                                    <nuxt-img
                                         class="relative wow animate__fadeInUp-100 animation-delay-2"
                                         :class="$style['decorate-1']"
                                         src="@/assets/images/chinese/level-icon-1.png"
                                         alt=""
                                     />
-                                    <img
+                                    <nuxt-img
                                         class="relative wow animate__fadeInUp-50 animation-delay-1"
                                         :class="$style['decorate-2']"
                                         src="@/assets/images/chinese/level-icon-2.png"

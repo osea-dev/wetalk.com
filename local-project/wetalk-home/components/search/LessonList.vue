@@ -4,15 +4,15 @@
         class="grid grid-cols-3 wow-group-3 lg:grid-cols-2 md:grid-cols-1"
     >
         <Link
+            v-for="item in prop.lessonList"
+            :key="item.courseid"
             :to="link.education + '/' + item.courseid"
             target="_blank"
             :class="$style['education-item']"
             class="wow animate__fadeInUp-100 md:grid md:grid-cols-2 sm:grid-cols-1"
-            v-for="item in prop.lessonList"
-            :key="item.courseid"
         >
             <div :class="$style['item-thumb']">
-                <img :src="item.img" alt="" />
+                <nuxt-img :src="item.img" alt="" />
             </div>
             <div :class="$style['item-info']">
                 <div

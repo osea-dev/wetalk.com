@@ -42,24 +42,24 @@
                         class="flex justify-end"
                     >
                         <div
-                            :class="$style['thumb-box']"
                             ref="thumbBox"
+                            :class="$style['thumb-box']"
                             class="flex-shrink-0 wow-group-3"
                         >
                             <div :class="$style['img-box']">
-                                <img
+                                <nuxt-img
                                     src="@/assets/images/science/card-1.png"
                                     alt=""
                                 />
                             </div>
                             <div :class="$style['img-box']">
-                                <img
+                                <nuxt-img
                                     src="@/assets/images/science/card-2.png"
                                     alt=""
                                 />
                             </div>
                             <div :class="$style['img-box']">
-                                <img
+                                <nuxt-img
                                     src="@/assets/images/science/card-3.png"
                                     alt=""
                                 />

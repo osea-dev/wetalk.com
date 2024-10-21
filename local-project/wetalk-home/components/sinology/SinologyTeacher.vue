@@ -25,10 +25,10 @@
                             class="wow animate__fadeInRight-50"
                         >
                             <div
-                                :class="$style['info-item']"
-                                class="flex items-center"
                                 v-for="(item, index) in infoList"
                                 :key="index"
+                                :class="$style['info-item']"
+                                class="flex items-center"
                             >
                                 <i
                                     class="ic iconfont flex-shrink-0 icon-circle-right-strock flex items-center justify-center"
@@ -39,13 +39,13 @@
                     </div>
                     <div :class="$style['teacher-thumb-list']" class="flex">
                         <div :class="$style['teacher-thumb']">
-                            <img
+                            <nuxt-img
                                 src="@/assets/images/sinology/teacher-2.png"
                                 alt=""
                             />
                         </div>
                         <div :class="$style['teacher-thumb']">
-                            <img
+                            <nuxt-img
                                 src="@/assets/images/sinology/teacher-1.png"
                                 alt=""
                             />

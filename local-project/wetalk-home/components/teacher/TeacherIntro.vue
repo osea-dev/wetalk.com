@@ -11,7 +11,7 @@
                     class="flex justify-between items-center lg:block"
                     :class="$style['intro-block']"
                 >
-                    <div class="state-pos--left" ref="introDetail">
+                    <div ref="introDetail" class="state-pos--left">
                         <div :class="$style['module-header']">
                             <h3 :class="$style['module-title']">
                                 {{ $t("KEY_PAGE_TEACHER.INTRO.TITLE") }}
@@ -27,17 +27,17 @@
                         </div>
                     </div>
                     <div class="state-pos--right">
-                        <div :class="$style['intro-thumb']" ref="introThumb">
+                        <div ref="introThumb" :class="$style['intro-thumb']">
                             <div :class="$style['img-box']">
                                 <div :class="$style['shadow-card']"></div>
                                 <div :class="$style['shadow-card']"></div>
                                 <div :class="$style['shadow-card']"></div>
                                 <div :class="$style['shadow-card']"></div>
                                 <div :class="$style['main-card']">
-                                    <img :src="introTeacherThumb" alt="" />
+                                    <nuxt-img :src="introTeacherThumb" alt="" />
                                 </div>
                                 <div :class="$style['intro-btn']">
-                                    <img
+                                    <nuxt-img
                                         src="@/assets/images/teacher/btn.png"
                                         alt=""
                                     />
@@ -52,10 +52,10 @@
                         class="grid grid-cols-2 grid-rows-2 md:grid-cols-1 md:grid-rows-1 wow-group-4"
                     >
                         <div
-                            :class="$style['intro-msg-item']"
-                            class="wow animate__fadeInUp-50"
                             v-for="(item, index) in introList"
                             :key="index"
+                            :class="$style['intro-msg-item']"
+                            class="wow animate__fadeInUp-50"
                         >
                             <div
                                 :class="$style['bg']"
@@ -73,7 +73,7 @@
                                         :class="$style['icon']"
                                         class="flex-shrink-0"
                                     >
-                                        <img :src="item.icon" alt="" />
+                                        <nuxt-img :src="item.icon" alt="" />
                                     </div>
                                     <div
                                         :class="$style['info']"

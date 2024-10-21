@@ -15,7 +15,7 @@
                             class="swiper-slide"
                             :class="$style['course-thumb']"
                         >
-                            <img :src="course.img" alt="" />
+                            <nuxt-img :src="course.img" alt="" />
                         </div>
                     </div>
                 </div>

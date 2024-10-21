@@ -19,7 +19,7 @@
                             >
                                 <i class="ic" :class="item.icon"></i>
                                 <div class="img-box">
-                                    <img :src="item.image" alt="" />
+                                    <nuxt-img :src="item.image" alt="" />
                                 </div>
                             </div>
                             <a
