@@ -8,9 +8,9 @@
             <div class="wrapper--limit-width h-full">
                 <div :class="$style['module-bg']" class="relative h-full">
                     <div :class="$style['img-box']">
-                        <!-- <img src="@/assets/images/teacher/banner-1.png" alt="" /> -->
+                        <!-- <nuxt-img src="@/assets/images/teacher/banner-1.png" alt="" /> -->
                         <div :class="$style['parallax-box']">
-                            <img
+                            <nuxt-img
                                 class="parallax-layer"
                                 data-depth="0.2"
                                 src="@/assets/images/teacher/banner-l-1.png"
@@ -18,7 +18,7 @@
                             />
                         </div>
                         <div :class="$style['parallax-box']">
-                            <img
+                            <nuxt-img
                                 class="parallax-layer"
                                 data-depth="0.1"
                                 src="@/assets/images/teacher/banner-l-2.png"
@@ -26,7 +26,7 @@
                             />
                         </div>
                         <div :class="$style['parallax-box']">
-                            <img
+                            <nuxt-img
                                 class="parallax-layer"
                                 data-depth="-0.3"
                                 src="@/assets/images/teacher/banner-l-3.png"
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div :class="$style['img-box']">
-                        <img
+                        <nuxt-img
                             src="@/assets/images/teacher/banner-3.png"
                             alt=""
                         />
@@ -44,7 +44,7 @@
                         class="wrapper--limit-width-mini h-full flex items-center justify-end z-20 relative lg:justify-center"
                     >
                         <div :class="$style['logo-img-box']">
-                            <img
+                            <nuxt-img
                                 src="@/assets/images/teacher/banner-2.png"
                                 alt=""
                             />
@@ -68,10 +68,10 @@
                                 :to="item.url"
                                 target="_blank"
                             >
-                                <img :src="item.img" alt="" />
+                                <nuxt-img :src="item.img" alt="" />
                             </Link>
                             <div v-else>
-                                <img :src="item.img" alt="" />
+                                <nuxt-img :src="item.img" alt="" />
                             </div>
                         </div>
                     </div>

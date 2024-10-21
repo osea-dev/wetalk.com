@@ -9,7 +9,7 @@
                 </div>
                 <div ref="imgGroup" :class="$style['module-body']">
                     <div :class="$style['img-1']">
-                        <img
+                        <nuxt-img
                             class="parallax-layer"
                             data-depth="-0.2"
                             src="@/assets/images/news/banner-1.png"
@@ -17,7 +17,7 @@
                         />
                     </div>
                     <div :class="$style['img-2']">
-                        <img
+                        <nuxt-img
                             class="parallax-layer"
                             data-depth="-0.6"
                             src="@/assets/images/news/banner-2.png"
@@ -25,7 +25,7 @@
                         />
                     </div>
                     <div :class="$style['img-3']">
-                        <img
+                        <nuxt-img
                             class="parallax-layer"
                             data-depth="0.2"
                             src="@/assets/images/news/banner-3.png"
@@ -33,7 +33,7 @@
                         />
                     </div>
                     <div :class="$style['img-4']">
-                        <img
+                        <nuxt-img
                             class="parallax-layer"
                             data-depth="0.5"
                             src="@/assets/images/news/banner-4.png"

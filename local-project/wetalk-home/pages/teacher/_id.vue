@@ -4,7 +4,7 @@
  * @LastEditTime: 2023-01-13 16:07:30
 -->
 <template>
-    <div :class="$style['teacher-detail-container']" v-if="teacherDetail">
+    <div v-if="teacherDetail" :class="$style['teacher-detail-container']">
         <div :class="$style['banner-module']" class="p-module">
             <div class="wrapper--limit-width">
                 <div
@@ -29,17 +29,17 @@
                                     v-for="(item, index) in teacherDetail.keys"
                                 >
                                     <div
-                                        :class="$style['tag-item']"
                                         :key="index"
+                                        :class="$style['tag-item']"
                                     >
                                         <span class="text">{{ item }}</span>
                                         <i
-                                            :class="$style['divide-line']"
-                                            class="ic"
                                             v-if="
                                                 index !=
                                                 teacherDetail.keys.length - 1
                                             "
+                                            :class="$style['divide-line']"
+                                            class="ic"
                                         ></i>
                                     </div>
                                 </template>
@@ -72,8 +72,8 @@
                                 }}</span>
                             </div>
                             <div
-                                :class="$style['row']"
                                 v-if="teacherDetail.religion"
+                                :class="$style['row']"
                             >
                                 <span :class="$style['title']"
                                     >{{ $t("宗教信仰") }}:
@@ -84,17 +84,17 @@
                             </div>
                         </div>
                         <div
-                            :class="$style['info-footer']"
-                            class="flex wow animate__fadeInUp-50"
                             v-if="
                                 teacherDetail.motto || teacherDetail.philosophy
                             "
+                            :class="$style['info-footer']"
+                            class="flex wow animate__fadeInUp-50"
                         >
                             <div
+                                v-if="teacherDetail.motto"
                                 :class="$style['wrapper--info-btn']"
                                 class="relative z-20"
                                 @click="openDetail('motto')"
-                                v-if="teacherDetail.motto"
                             >
                                 <div
                                     :class="$style['info-btn']"
@@ -109,10 +109,10 @@
                                 ></div>
                             </div>
                             <div
+                                v-if="teacherDetail.philosophy"
                                 :class="$style['wrapper--info-btn']"
                                 class="relative z-10"
                                 @click="openDetail('philosophy')"
-                                v-if="teacherDetail.philosophy"
                             >
                                 <div
                                     :class="$style['info-btn']"
@@ -135,7 +135,7 @@
                         class="relative z-10 flex sm:block sm:w-full"
                     >
                         <div :class="$style['thumb-box']" class="wow-group-2">
-                            <img :src="teacherDetail.photo" alt="" />
+                            <nuxt-img :src="teacherDetail.photo" alt="" />
                             <div
                                 :class="$style['icon']"
                                 class="wow animate__fadeInUp-50"
@@ -170,13 +170,13 @@
                                         advantage.value
                                     }}</span>
                                     <sup
-                                        :class="$style['item-sup']"
                                         v-if="advantage.sup"
+                                        :class="$style['item-sup']"
                                         >{{ advantage.sup }}</sup
                                     >
                                     <sub
-                                        :class="$style['item-sub']"
                                         v-if="advantage.sub"
+                                        :class="$style['item-sub']"
                                         >{{ advantage.sub }}</sub
                                     >
                                 </div>

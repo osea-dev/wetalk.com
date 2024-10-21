@@ -1,30 +1,33 @@
 <template>
     <main :class="$style['charity-page']">
         <div
+            ref="bannerModule"
             class="p-module"
             :class="$style['banner-module']"
-            ref="bannerModule"
         >
             <div :class="$style['module-body']">
                 <div :class="$style['module-bg']">
-                    <img src="@/assets/images/charity/banner-bg-2.png" alt="" />
+                    <nuxt-img
+                        src="@/assets/images/charity/banner-bg-2.png"
+                        alt=""
+                    />
                 </div>
                 <div class="wrapper--limit-width relative z-10">
                     <div class="wrapper--limit-width-mini">
                         <div :class="$style['module-title']">
-                            <img
+                            <nuxt-img
                                 src="@/assets/images/charity/banner-title-1.png"
                                 alt=""
                             />
-                            <img
+                            <nuxt-img
                                 src="@/assets/images/charity/banner-title-2.png"
                                 alt=""
                             />
-                            <img
+                            <nuxt-img
                                 src="@/assets/images/charity/banner-title-3.png"
                                 alt=""
                             />
-                            <img
+                            <nuxt-img
                                 src="@/assets/images/charity/banner-title-4.png"
                                 alt=""
                             />
@@ -64,13 +67,13 @@
                             class="grid grid-cols-2 wow wow-group-2"
                         >
                             <div
-                                :class="$style['category-item']"
-                                class="wow animate__fadeInUp-30_percent"
                                 v-for="(item, index) in categoryList"
                                 :key="index"
+                                :class="$style['category-item']"
+                                class="wow animate__fadeInUp-30_percent"
                             >
                                 <div :class="$style['item-thumb']">
-                                    <img :src="item.thumb" alt="" />
+                                    <nuxt-img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['item-info']">
                                     <div :class="$style['item-title']">
@@ -110,13 +113,13 @@
                             class="grid grid-cols-2 wow wow-group-2 md:grid-cols-1"
                         >
                             <div
-                                :class="$style['intro-item']"
-                                class="wow animate__fadeInUp-30_percent"
                                 v-for="(item, index) in introList"
                                 :key="index"
+                                :class="$style['intro-item']"
+                                class="wow animate__fadeInUp-30_percent"
                             >
                                 <div :class="$style['item-thumb']">
-                                    <img :src="item.thumb" alt="" />
+                                    <nuxt-img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['item-info']">
                                     <div :class="$style['item-title']">
@@ -157,13 +160,13 @@
                                 ></h2>
                             </div>
                             <div
-                                :class="$style['event-item']"
-                                class="wow animate__fadeInLeft-50"
                                 v-for="(item, index) in eventListLeft"
                                 :key="index"
+                                :class="$style['event-item']"
+                                class="wow animate__fadeInLeft-50"
                             >
                                 <div :class="$style['item-bg']">
-                                    <img :src="item.thumb" alt="" />
+                                    <nuxt-img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['item-info']">
                                     <div :class="$style['item-title']">
@@ -180,13 +183,13 @@
                             class="grid wow wow-group-3"
                         >
                             <div
-                                :class="$style['event-item']"
-                                class="wow animate__fadeInRight-50"
                                 v-for="(item, index) in eventListRight"
                                 :key="index"
+                                :class="$style['event-item']"
+                                class="wow animate__fadeInRight-50"
                             >
                                 <div :class="$style['item-bg']">
-                                    <img :src="item.thumb" alt="" />
+                                    <nuxt-img :src="item.thumb" alt="" />
                                 </div>
                                 <div :class="$style['item-info']">
                                     <div :class="$style['item-title']">
@@ -210,23 +213,6 @@ import { defineComponent } from "@nuxtjs/composition-api";
 import { onMounted, ref, useCssModule } from "vue";
 
 export default defineComponent({
-    head() {
-        return {
-            title: this.$i18n.t("KEY_SEO.CHARITY.TITLE"),
-            meta: [
-                {
-                    hid: "keywords",
-                    name: "keywords",
-                    content: this.$i18n.t("KEY_SEO.CHARITY.KEYWORDS"),
-                },
-                {
-                    hid: "description",
-                    name: "description",
-                    content: this.$i18n.t("KEY_SEO.CHARITY.DESC"),
-                },
-            ],
-        };
-    },
     setup() {
         const categoryList = [
             {
@@ -389,6 +375,23 @@ export default defineComponent({
             eventListLeft,
             eventListRight,
             bannerModule,
+        };
+    },
+    head() {
+        return {
+            title: this.$i18n.t("KEY_SEO.CHARITY.TITLE"),
+            meta: [
+                {
+                    hid: "keywords",
+                    name: "keywords",
+                    content: this.$i18n.t("KEY_SEO.CHARITY.KEYWORDS"),
+                },
+                {
+                    hid: "description",
+                    name: "description",
+                    content: this.$i18n.t("KEY_SEO.CHARITY.DESC"),
+                },
+            ],
         };
     },
 });

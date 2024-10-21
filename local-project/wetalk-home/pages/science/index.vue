@@ -6,8 +6,8 @@
 <template>
     <main :class="$style['science-container']">
         <section
-            class="p-module"
             ref="bannerModule"
+            class="p-module"
             :class="$style['module-banner']"
         >
             <div class="relative">
@@ -20,13 +20,13 @@
                                 class="flex flex-col items-center h-full justify-center"
                             >
                                 <div :class="$style['module-title']">
-                                    <img
+                                    <nuxt-img
                                         src="@/assets/images/science/banner-title.png"
                                         alt=""
                                     />
                                 </div>
                                 <div :class="$style['module-subtitle']">
-                                    <img
+                                    <nuxt-img
                                         src="@/assets/images/science/banner-subtitle.png"
                                         alt=""
                                     />
@@ -40,7 +40,7 @@
                                     $style['box-wrapper'],
                                 ]"
                             >
-                                <img
+                                <nuxt-img
                                     class="parallax-layer"
                                     data-depth="0.1"
                                     src="@/assets/images/science/banner-box-4.png"
@@ -53,7 +53,7 @@
                                     $style['box-wrapper'],
                                 ]"
                             >
-                                <img
+                                <nuxt-img
                                     class="parallax-layer"
                                     data-depth="0.1"
                                     src="@/assets/images/science/banner-box-1.png"
@@ -72,13 +72,13 @@
                                         class="parallax-layer"
                                         data-depth="0.18"
                                     >
-                                        <img
+                                        <nuxt-img
                                             src="@/assets/images/science/banner-d-2.png"
                                             alt=""
                                         />
                                     </div>
                                 </div>
-                                <img
+                                <nuxt-img
                                     class="parallax-layer"
                                     data-depth="0.2"
                                     src="@/assets/images/science/banner-box-2.png"
@@ -97,13 +97,13 @@
                                         class="parallax-layer"
                                         data-depth="0.16"
                                     >
-                                        <img
+                                        <nuxt-img
                                             src="@/assets/images/science/banner-d-1.png"
                                             alt=""
                                         />
                                     </div>
                                 </div>
-                                <img
+                                <nuxt-img
                                     class="parallax-layer"
                                     data-depth="0.18"
                                     src="@/assets/images/science/banner-box-3.png"
@@ -117,7 +117,7 @@
                     <div :class="$style['img-box']" class="relative z-20">
                         <div :class="$style['banner-1']">
                             <div :class="$style['banner-d-box']">
-                                <img
+                                <nuxt-img
                                     src="@/assets/images/science/banner-1.png"
                                     alt=""
                                 />
@@ -137,7 +137,7 @@
         />
         <ScienceTeacher class="p-module" />
         <IntroCard v-bind="cardData" class="p-module" />
-        <LevelIntroModule :levelIntroList="levelIntroList" class="p-module" />
+        <LevelIntroModule :level-intro-list="levelIntroList" class="p-module" />
         <MessageBoard class="p-module" />
     </main>
 </template>
@@ -156,23 +156,6 @@ import Parallax from "parallax-js";
 import { defineComponent } from "@nuxtjs/composition-api";
 
 export default defineComponent({
-    head() {
-        return {
-            title: this.$i18n.t("KEY_SEO.SCIENCE.TITLE"),
-            meta: [
-                {
-                    hid: "keywords",
-                    name: "keywords",
-                    content: this.$i18n.t("KEY_SEO.SCIENCE.KEYWORDS"),
-                },
-                {
-                    hid: "description",
-                    name: "description",
-                    content: this.$i18n.t("KEY_SEO.SCIENCE.DESC"),
-                },
-            ],
-        };
-    },
     components: {
         IntroCard,
         IntroCard2,
@@ -312,6 +295,23 @@ export default defineComponent({
             cardData,
             levelIntroList,
             bannerModule,
+        };
+    },
+    head() {
+        return {
+            title: this.$i18n.t("KEY_SEO.SCIENCE.TITLE"),
+            meta: [
+                {
+                    hid: "keywords",
+                    name: "keywords",
+                    content: this.$i18n.t("KEY_SEO.SCIENCE.KEYWORDS"),
+                },
+                {
+                    hid: "description",
+                    name: "description",
+                    content: this.$i18n.t("KEY_SEO.SCIENCE.DESC"),
+                },
+            ],
         };
     },
 });
